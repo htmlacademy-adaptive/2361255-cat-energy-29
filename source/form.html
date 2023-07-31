@@ -39,195 +39,158 @@
   </header>
 
   <main class="main-container">
-    <section class="products">
-      <h1 class="products__title">Каталог продукции</h1>>
-      <!-- Нужно ли для разных программ присваивает свои классы, чтобы они сортировались п.4.3 ТЗ -->
-      <ul class="products__list product-card">
-        <li class="product-card__item">
-          <div class="product-card__wrapper">
-            <img class="product-card__image" src="#" width="140" height="112"
-              alt="Упаковка корма Cat Energy PRO 500 г со вкусом курицы.">
-            <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
-            <dl class="product-card__composition">
-              <dt class="product-card__description">Масса</dt>
-              <dd class="product-card__value">500 г</dd>
-              <dt class="product-card__description">Вкус</dt>
-              <dd class="product-card__value">Курица</dd>
-              <dt class="product-card__description">Цена</dt>
-              <dd class="product-card__value">700 Р</dd>
-            </dl>
+
+    <section class="program-selection">
+      <h1 class="main-container__title">Подбор программы</h1>
+      <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+
+      <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="POST">
+
+        <fieldset class="form__fieldset">
+
+          <div class="form__fieldset form-field">
+            <label class="form-field__label">ИМЯ:*</label>
+            <input class="form-field__control form-control input" type="text" name="cat-name" id="cat-name"
+              placeholder="Имя кота" value="Барсик" required>
           </div>
-          <button class="product-card__button button button--primary" type="button">заказать</button>
-        </li>
-        <li class="product-card__item">
-          <div class="product-card__wrapper">
-            <img class="product-card__image" src="#" width="140" height="112"
-              alt="Упаковка корма Cat Energy PRO 1000 г со вкусом курицы.">
-            <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
-            <dl class="product-card__composition">
-              <dt class="product-card__description">Масса</dt>
-              <dd class="product-card__value">1000 г</dd>
-              <dt class="product-card__description">Вкус</dt>
-              <dd class="product-card__value">Курица</dd>
-              <dt class="product-card__description">Цена</dt>
-              <dd class="product-card__value">1000 Р</dd>
-            </dl>
+
+
+          <div class="form__fieldset form-field">
+            <label class="form-field__label">Вес (кг):*</label>
+            <input class="form-field__control form-control input" type="number" name="cat-weight" id="cat-weight"
+              placeholder="Вес кота" value="7" required>
           </div>
-          <button class="product-card__button button button--primary" type="button">заказать</button>
-        </li>
-        <li class="product-card__item">
-          <div class="product-card__wrapper">
-            <img class="product-card__image" src="#" width="140" height="112"
-              alt="Упаковка корма Cat Energy PRO 500 г со вкусом рыбы.">
-            <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
-            <dl class="product-card__composition">
-              <dt class="product-card__description">Масса</dt>
-              <dd class="product-card__value">500 г</dd>
-              <dt class="product-card__description">Вкус</dt>
-              <dd class="product-card__value">Рыба</dd>
-              <dt class="product-card__description">Цена</dt>
-              <dd class="product-card__value">700 Р</dd>
-            </dl>
+
+
+          <div class="form__fieldset form-field">
+            <label class="form-field__label">Возраст (лет):</label>
+            <input class="form-field__control form-control input" type="number" name="cat-age" id="cat-age"
+              placeholder="Возраст кота" value="7">
           </div>
-          <button class="product-card__button button button--primary" type="button">заказать</button>
-        </li>
-        <li class="product-card__item">
-          <div class="product-card__wrapper">
-            <img class="product-card__image" src="#" width="140" height="112"
-              alt="Упаковка корма Cat Energy PRO 1000 г со вкусом рыбы.">
-            <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
-            <dl class="product-card__composition">
-              <dt class="product-card__description">Масса</dt>
-              <dd class="product-card__value">1000 г</dd>
-              <dt class="product-card__description">Вкус</dt>
-              <dd class="product-card__value">Рыба</dd>
-              <dt class="product-card__description">Цена</dt>
-              <dd class="product-card__value">1000 Р</dd>
-            </dl>
+        </fieldset>
+
+        <fieldset class="form-radio radio-target">
+          <legend class="visually-hidden">Цель программы</legend>
+          <ul class="radio-target__list">
+
+            <li class="radio-target__item">
+              <label class="radio-target__control">
+                <input class="radio-target__control-input visually-hidden" type="radio" name="radio-target__control"
+                  value="weight-loss" checked>
+                <span class="radio-target__control-mark"></span>
+                <span class="radio-target__control-label">Похудение</span>
+              </label>
+            </li>
+
+            <li class="radio-target__item">
+              <label class="radio-target__control">
+                <input class="radio-target__control-input visually-hidden" type="radio" name="radio-target__control"
+                  value="weight-gain">
+                <span class="radio-target__control-mark"></span>
+                <span class="radio-target__control-label">Набор массы</span>
+              </label>
+            </li>
+
+            <li class="radio-target__item">
+              <label class="radio-target__control">
+                <input class="radio-target__control-input visually-hidden" type="radio" name="radio-target__control"
+                  value="advice">
+                <span class="radio-target__control-mark"></span>
+                <span class="radio-target__control-label">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </li>
+
+          </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__fieldset__title">Контактные данные (владельца кота)</legend>
+          <div class="form__fieldset contact-user">
+            <label class="contact-user__label">E-mail:*</label>
+            <input class="contact-user__control form-control input input--mail" type="text" name="email" id="email"
+              placeholder="Ваш e-mail" value="kuklachev@gmail.com" required>
           </div>
-          <button class="product-card__button button button--primary" type="button">заказать</button>
-        </li>
-        <li class="product-card__item">
-          <div class="product-card__wrapper">
-            <img class="product-card__image" src="#" width="140" height="112"
-              alt="Упаковка корма Cat Energy slim 500 г со вкусом гречки">
-            <h2 class="product-card__title">Cat Energy slim 500 г</h2>
-            <dl class="product-card__composition">
-              <dt class="product-card__description">Масса</dt>
-              <dd class="product-card__value">500 г</dd>
-              <dt class="product-card__description">Вкус</dt>
-              <dd class="product-card__value">Гречка</dd>
-              <dt class="product-card__description">Цена</dt>
-              <dd class="product-card__value">400 Р</dd>
-            </dl>
+          <div class="form__fieldset contact-user">
+            <label class="contact-user__label">Телефон:*</label>
+            <input class="contact-user__control form-control input input--tel" type="tel" name="tel" id="tel"
+              placeholder="Ваш номер телефона" value="8 (960) 900-60-90" required>
           </div>
-          <button class="product-card__button button button--primary" type="button">заказать</button>
-        </li>
-        <li class="product-card__item">
-          <div class="product-card__wrapper">
-            <img class="product-card__image" src="#" width="140" height="112"
-              alt="Упаковка корма Cat Energy slim 1000 г со вкусом гречки.">
-            <h2 class="product-card__title">Cat Energy slim 1000 г</h2>
-            <dl class="product-card__composition">
-              <dt class="product-card__description">Масса</dt>
-              <dd class="product-card__value">1000 г</dd>
-              <dt class="product-card__description">Вкус</dt>
-              <dd class="product-card__value">Гречка</dd>
-              <dt class="product-card__description">Цена</dt>
-              <dd class="product-card__value">700 Р</dd>
-            </dl>
-          </div>
-          <button class="product-card__button button button--primary" type="button">заказать</button>
-        </li>
-        <li class="product-card__item">
-          <div class="product-card__wrapper">
-            <img class="product-card__image" src="#" width="140" height="112"
-              alt="Упаковка корма Cat Energy slim 500 г со вкусом риса.">
-            <h2 class="product-card__title">Cat Energy slim 500 г</h2>
-            <dl class="product-card__composition">
-              <dt class="product-card__description">Масса</dt>
-              <dd class="product-card__value">500 г</dd>
-              <dt class="product-card__description">Вкус</dt>
-              <dd class="product-card__value">Рис</dd>
-              <dt class="product-card__description">Цена</dt>
-              <dd class="product-card__value">500 Р</dd>
-            </dl>
-          </div>
-          <button class="product-card__button button button--primary" type="button">заказать</button>
-        </li>
-        <li class="product-card__item product-card__item--show-more">
-          <div class="product-card__wrapper">
-            <span class="product-card__image product-card__image--show-more"></span>
-            <h2 class="product-card__title">Показать еще 100500 товаров</h2>
-            <p class="product-card__description product-card__description--show-more">На самом деле вкусов
-              гораздо больше!</p>
-            <a class="product-card__button button button--secondary" href="catalog.html">показать все</a>
-          </div>
-        </li>
-      </ul>
+        </fieldset>
+
+        <fieldset class="form__fieldset comments">
+          <legend class="form__fieldset__title">Комментарий</legend>
+          <label class="comments__field">
+            <textarea class="comments__field__control form-control textarea" name="comment" id="comment"
+              placeholder="Расскажите обо всех повАдках кота"></textarea>
+          </label>
+        </fieldset>
+
+        <fieldset class="form-chekbox chekbox-target">
+          <legend class="chekbox-target__title">Дополнительно</legend>
+          <ul class="chekbox-target extra-list">
+
+            <li class="extra-list__item">
+              <label class="extra-list__control">
+                <input class="extra-list__control-input" type="checkbox" name="sweetener" checked>
+                <span class="extra-list__control-mark"></span>
+                <span class="extra-list__control-label">сахарозаменитель</span>
+              </label>
+            </li>
+
+            <li class="extra-list__item">
+              <label class="extra-list__control">
+                <input class="extra-list__control-input" type="checkbox" name="water">
+                <span class="extra-list__control-mark"></span>
+                <span class="extra-list__control-label">питьевая вода</span>
+              </label>
+            </li>
+
+
+            <li class="extra-list__item">
+              <label class="extra-list__control">
+                <input class="extra-list__control-input" type="checkbox" name="milk">
+                <span class="extra-list__control-mark"></span>
+                <span class="extra-list__control-label">молоко</span>
+              </label>
+            </li>
+
+
+            <li class="extra-list__item">
+              <label class="extra-list__control">
+                <input class="extra-list__control-input" type="checkbox" name="vitamins">
+                <span class="extra-list__control-mark"></span>
+                <span class="extra-list__control-label">витамины</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form__button button button--primary" type="submit">отправить заявку</button>
+
+        <p class="form__binding binding-description">* — Обязательные поля</p>
+
+      </form>
+
     </section>
-    <section class="additionally-products">
-      <h2 class="additionally-products__title">Дополнительные товары</h2>
-      <ul class="additionally-products__list additionally-product">
-        <li class="additionally-product__item">
-          <div class="additionally-product__wrapper">
-            <h3 class="additionally-product__title">Сахарозаменитель</h3>
-            <p class="additionally-product__quantity">1 упаковка (100 г)</p>
-            <p class="additionally-product__price">200 ₽</p>
-          </div>
-          <button class="additionally-product__button button button--primary" type="button">заказать</button>
-        </li>
-        <li class="additionally-product__item">
-          <div class="additionally-product__wrapper">
-            <h3 class="additionally-product__title">Питьевая вода</h3>
-            <p class="additionally-product__quantity">5 литров</p>
-            <p class="additionally-product__price">50 ₽</p>
-          </div>
-          <button class="additionally-product__button button button--primary" type="button">заказать</button>
-        </li>
-        <li class="additionally-product__item">
-          <div class="additionally-product__wrapper">
-            <h3 class="additionally-product__title">молоко</h3>
-            <p class="additionally-product__quantity">1 литр</p>
-            <p class="additionally-product__price">100 ₽</p>
-          </div>
-          <button class="additionally-product__button button button--primary" type="button">заказать</button>
-        </li>
-        <li class="additionally-product__item">
-          <div class="additionally-product__wrapper">
-            <h3 class="additionally-product__title">витамины</h3>
-            <p class="additionally-product__quantity">1 упаковка (30 г)</p>
-            <p class="additionally-product__price">300 ₽</p>
-          </div>
-          <button class="additionally-product__button button button--primary" type="button">заказать</button>
-        </li>
-      </ul>
-    </section>
-    <div class="gift">
-      <span class="gift__icon"></span>
-      <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
-    </div>
 
     <section class="contacts">
       <div class="contacts__wrapper">
-        <div class="contacts__invite">
-          <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-          <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <div class="contacts__map">
-          <!-- Мобильная версия: интерактивная карта (карты Google или Яндекса), ширина подстраивается под ширину вьюпорта (но
-              не уже контентной ширины макета), на карте размещён маркер (может быть как кастомным, так и дефолтным), центр
-              карты соответствует центру блока в макете. -->
-          <img src="img/footer/map-mobile.png" width="320" height="362"
-            alt="Карта офиса по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-        </div>
+        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
+      <div class="contacts__map">
+        <!-- Мобильная версия: интерактивная карта (карты Google или Яндекса), ширина подстраивается под ширину вьюпорта (но
+            не уже контентной ширины макета), на карте размещён маркер (может быть как кастомным, так и дефолтным), центр
+            карты соответствует центру блока в макете. -->
+        <img src="img/footer/map-mobile.png" width="320" height="362"
+          alt="Карта офиса по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+      </div>
+
     </section>
   </main>
 
   <footer class="main-footer">
-
     <!-- Разобраться с логотипом, оптимизируется ли картинка или каждый раз новая -->
+
     <div class="fotter-logo">
       <a class="fotter-logo__logo-site logo-text" href="index.html">
         <img class="logo-text__site-name" src="#" width="128" height="24" alt="Логотип сайта"><span
@@ -302,6 +265,7 @@
       </a>
     </div>
   </footer>
+
 </body>
 
 </html>
