@@ -40,36 +40,33 @@
   </header>
 
 
-  <main class="main-container">
+  <main>
 
     <section class="program-selection">
-      <h1 class="main-container__title">Подбор программы</h1>
+
+      <h1 class="program-selection__title">Подбор программы</h1>
       <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
       <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="POST">
+        <h2 class="form__title visually-hidden">Введите данные кота.</h2>
 
-        <fieldset class="form__fieldset">
-
-          <div class="form__fieldset form-field">
-            <label class="form-field__label">ИМЯ:*</label>
-            <input class="form-field__control form-control input" type="text" name="cat-name" id="cat-name"
-              placeholder="Имя кота" value="Барсик" required>
+        <div class="form__info cat-info">
+          <div class="cat-info__wrapper">
+            <label class="cat-info__label" for="cat-name">ИМЯ:*</label>
+            <input class="cat-info__field" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
           </div>
 
-
-          <div class="form__fieldset form-field">
-            <label class="form-field__label">Вес (кг):*</label>
-            <input class="form-field__control form-control input" type="number" name="cat-weight" id="cat-weight"
-              placeholder="Вес кота" value="7" required>
+          <div class="cat-info__wrapper">
+            <label class="cat-info__label" for="weight">Вес (кг):*</label>
+            <input class="cat-info__field" type="text" name="weight" id="weight" placeholder="7" required>
           </div>
 
-
-          <div class="form__fieldset form-field">
-            <label class="form-field__label">Возраст (лет):</label>
-            <input class="form-field__control form-control input" type="number" name="cat-age" id="cat-age"
-              placeholder="Возраст кота" value="7">
+          <div class="cat-info__wrapper">
+            <label class="cat-info__label" for="age">Возраст (лет):</label>
+            <input class="cat-info__field" type="text" name="age" id="age" placeholder="7">
           </div>
-        </fieldset>
+        </div>
+
 
         <fieldset class="form-radio radio-target">
           <legend class="visually-hidden">Цель программы</legend>
@@ -101,7 +98,6 @@
                 <span class="radio-target__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
-
           </ul>
         </fieldset>
 
@@ -109,12 +105,12 @@
           <legend class="form__fieldset__title">Контактные данные (владельца кота)</legend>
           <div class="form__fieldset contact-user">
             <label class="contact-user__label">E-mail:*</label>
-            <input class="contact-user__control form-control input input--mail" type="text" name="email" id="email"
+            <input class="contact-user__control input input--mail" type="text" name="email" id="email"
               placeholder="Ваш e-mail" value="kuklachev@gmail.com" required>
           </div>
           <div class="form__fieldset contact-user">
             <label class="contact-user__label">Телефон:*</label>
-            <input class="contact-user__control form-control input input--tel" type="tel" name="tel" id="tel"
+            <input class="contact-user__control input input--tel" type="tel" name="tel" id="tel"
               placeholder="Ваш номер телефона" value="8 (960) 900-60-90" required>
           </div>
         </fieldset>
@@ -122,7 +118,7 @@
         <fieldset class="form__fieldset comments">
           <legend class="form__fieldset__title">Комментарий</legend>
           <label class="comments__field">
-            <textarea class="comments__field__control form-control textarea" name="comment" id="comment"
+            <textarea class="comments__field__control textarea" name="comment" id="comment"
               placeholder="Расскажите обо всех повАдках кота"></textarea>
           </label>
         </fieldset>
@@ -165,29 +161,24 @@
               </label>
             </li>
           </ul>
+
         </fieldset>
-        <button class="form__button button button--primary" type="submit">отправить заявку</button>
 
         <p class="form__binding binding-description">* — Обязательные поля</p>
 
+        <button class="form__button button button--primary" type="submit">отправить заявку</button>
       </form>
-
     </section>
 
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="map">
+      <div class="map__wrapper">
+        <h2 class="map__title">приглашаем к сотрудничеству дилеров!</h2>
+        <p class="map__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <!-- Как сдеалть адрес, adress нельзя в div -->
       </div>
-      <div class="contacts__map">
-        <!-- Мобильная версия: интерактивная карта (карты Google или Яндекса), ширина подстраивается под ширину вьюпорта (но
-            не уже контентной ширины макета), на карте размещён маркер (может быть как кастомным, так и дефолтным), центр
-            карты соответствует центру блока в макете. -->
-        <img src="img/footer/map-mobile.png" width="320" height="362"
-          alt="Карта офиса по адресу Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
-      </div>
-
+      <iframe class="map__link map__link--image"></iframe>
     </section>
+
   </main>
 
   <footer class="main-footer">
@@ -195,8 +186,8 @@
 
     <div class="fotter-logo">
       <a class="fotter-logo__logo-site logo-text" href="index.html">
-        <img class="logo-text__site-name" src="#" width="128" height="24" alt="Логотип сайта"><span
-          class="visually-hidden">Переход на главную страницу</span>
+        <img class="logo-text__site-name" src="#" width="128" height="24" alt="Логотип сайта">
+        <span class="visually-hidden">Переход на главную страницу</span>
       </a>
     </div>
 
