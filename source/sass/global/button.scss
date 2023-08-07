@@ -14,4 +14,24 @@
   color: $text-basic-light;
   margin: 0;
   box-sizing: border-box;
+  text-align: center;
+}
+
+
+.button--primary {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.button--secondary {
+  color: $text-grey400;
+  font-family: Oswald;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: $bg-grey;
+  padding: 10px 0;
 }
