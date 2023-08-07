@@ -1,1 +1,19 @@
-// Начните писать стили здесь
+@import "./global/fonts.scss";
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/page-body.scss";
+@import "./global/button.scss";
+@import "./block/main-header.scss";
+@import "./block/main-nav.scss";
+@import "./block/hero.scss";
+@import "./block/logo.scss";
+@import "./block/programs.scss";
+@import "./block/program-card.scss";
+@import "./block/advantages.scss";
+@import "./block/example.scss";
+@import "./block/map.scss";
+@import "./block/main-footer.scss";
+@import "./block/footer-logo.scss";
+@import "./block/social.scss";
+@import "./block/developer.scss";

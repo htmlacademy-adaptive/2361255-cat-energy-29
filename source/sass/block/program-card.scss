@@ -1,0 +1,37 @@
+.program-card {
+  background-color: $bg-grey;
+  position: relative;
+  padding: 30px 20px 14px 20px;
+  //Убрать падинги
+}
+
+.program-card__title {
+  margin: 0;
+  color: $text-basic-dark;
+  font-family: $font-oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+}
+
+.program-card__descr {
+  color: $text-grey400;
+  margin: 0;
+  font-family: $font-lato;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 42px;
+  font-weight: 400;
+}
+
+.program-card__link {
+  color: $text-basic-dark;
+  font-family: $font-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

@@ -1,0 +1,17 @@
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 8px 44px;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: none;
+  background-color: $bg-button-basic;
+  color: $text-basic-light;
+  margin: 0;
+  box-sizing: border-box;
+}
