@@ -6,6 +6,7 @@
   grid-template-columns: repeat(2, 140px);
   align-items: center;
   box-sizing: border-box;
+  background-color: $bg-basic-light;
 }
 
 .map__title {
@@ -30,8 +31,11 @@
 
 // Как сделать беэкграунд
 .map__link {
-  background-image: url("../img/location.png");
+  background-image: url("../img/map/location.png");
   width: 320px;
   height: 362px;
+}
 
+.map__wrapper--catalog {
+  background-color: $bg-grey;
 }

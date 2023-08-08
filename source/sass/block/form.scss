@@ -1,0 +1,59 @@
+.form__label {
+  color: $text-grey400;
+  font-family: $font-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__contain {
+  padding: 0 20px 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid $border-grey;
+  flex-direction: column;
+}
+
+
+.form__wrapper {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.form-control {
+  color: $text-grey400;
+  font-family: $font-oswald;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 13px 14px 6px 14px;
+  box-sizing: border-box;
+  flex-grow: 1;
+  border: 1px solid $border-input;
+}
+
+.form__title {
+  color: $text-basic-dark;
+  font-family: $font-oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+  margin-bottom: 35px;
+
+}
+
+.form__radio {
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.form-control--text-area {
+
+
+  width: 100%;
+  min-height: 150px;
+
+}
