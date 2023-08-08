@@ -1,12 +1,15 @@
 .map__wrapper {
-  width: 320px;
-  margin: 0 auto;
   padding: 26px 20px;
   display: grid;
   grid-template-columns: repeat(2, 140px);
   align-items: center;
   box-sizing: border-box;
   background-color: $bg-basic-light;
+}
+
+.map__container {
+  margin: 0 auto;
+  width: 320px;
 }
 
 .map__title {
@@ -38,4 +41,14 @@
 
 .map__wrapper--catalog {
   background-color: $bg-grey;
+}
+
+.map__wrapper--invert {
+  background-color: $bg-grey;
+}
+
+// УБРАТЬ
+.map {
+  width: 320px;
+  margin: 0 auto;
 }

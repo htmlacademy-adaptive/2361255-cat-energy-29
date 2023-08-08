@@ -10,17 +10,18 @@
 .form__contain {
   padding: 0 20px 24px;
   box-sizing: border-box;
-  border-bottom: 1px solid $border-grey;
-  flex-direction: column;
 }
 
-
-.form__wrapper {
+.form__label-wrapper {
   display: flex;
   gap: 13px;
   align-items: center;
   margin: 0;
   margin-bottom: 14px;
+}
+
+.form__label-wrapper:last-child {
+  margin-bottom: 0;
 }
 
 .form-control {
@@ -35,25 +36,79 @@
   border: 1px solid $border-input;
 }
 
+
+.form-control--text-area {
+  min-height: 150px;
+  resize: none;
+  padding: 14px;
+  min-width: 280px;
+}
+
+.form__content {
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.form__wrapper-title {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form__wrapper-strip {
+  position: relative;
+}
+
+.form__wrapper-strip--comments {
+  margin-bottom: 38px;
+}
+
+.form__wrapper-strip--user {
+  margin-top: 26px;
+  margin-bottom: 35px;
+}
+
+.form__wrapper-strip::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 2px;
+  background-color: $bg-branded;
+}
+
 .form__title {
   color: $text-basic-dark;
   font-family: $font-oswald;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
-  margin: 0;
-  margin-bottom: 35px;
+  position: relative;
+  z-index: 2;
+  width: max-content;
+  padding: 0 20px;
+  margin: 0 -20px;
+  background-color: $bg-basic-light;
+}
 
+.form__container-area {
+  padding-bottom: 23px;
+  box-sizing: border-box;
 }
 
 .form__radio {
-  border-bottom: 1px solid #D9D9D9;
+  margin-bottom: 26px;
 }
 
-.form-control--text-area {
-
-
-  width: 100%;
-  min-height: 150px;
-
+.form__binding {
+  margin: 0;
+  color: $text-basic-dark;
+  text-align: center;
+  font-family: $font-lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 21px 0 8px 0;
+  box-sizing: border-box;
 }
