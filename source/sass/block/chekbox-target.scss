@@ -8,7 +8,6 @@
 .chekbox-target {
   border: none;
   background-color: $bg-basic-light;
-
 }
 
 .chekbox-target__control-label {
@@ -22,8 +21,9 @@
 
 .chekbox-target__item {
   margin-bottom: 25px;
-  // Поменять на 13
 }
+
+// Поменять на 13
 
 .chekbox-target__item:last-child {
   margin-bottom: 0;

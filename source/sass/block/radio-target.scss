@@ -1,11 +1,10 @@
 .radio-target {
   border: none;
-  border-bottom: 1px solid #D9D9D9;
-  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid $border-grey-eb;
+  border-top: 1px solid $border-grey-eb;
   box-sizing: border-box;
   margin: 0;
   padding: 22px 20px 0 20px;
-
 }
 
 .radio-target__list {
