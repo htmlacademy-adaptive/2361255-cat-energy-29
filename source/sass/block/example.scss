@@ -1,0 +1,69 @@
+.example {
+  background-color: $bg-grey-dark;
+}
+
+.example__container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 25px 20px 40px 20px;
+  box-sizing: border-box;
+}
+
+.example__title {
+  color: $text-basic-dark;
+  font-family: $font-oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin-bottom: 40px;
+}
+
+.example__desription {
+  color: $text-grey400;
+  font-family: $font-lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-bottom: 20px;
+}
+
+.example__list {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.example__item {
+  margin: 0 auto;
+  padding-top: 14px;
+}
+
+.example__number {
+  color: $text-basic-dark;
+  font-family: $font-oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+.example__descr {
+  color: $text-grey400;
+  font-family: $font-lato;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 12px;
+}
+
+.example__legend {
+  color: $text-basic-dark;
+  text-align: center;
+  font-family: $font-oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}

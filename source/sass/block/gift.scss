@@ -1,0 +1,40 @@
+.gift-container {
+  width: 320px;
+  padding: 35px 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: $bg-basic-light;
+}
+
+.gift__wrapper {
+  background-image: url("../img/catalog/gifts-background.png");
+  background-repeat: no-repeat;
+  background-color: $bg-branded;
+  background-size: contain;
+  box-sizing: border-box;
+  padding: 58px 61px 42px 58px;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gift__title {
+  color: $text-basic-light;
+  text-align: center;
+  font-family: $font-lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.gift {
+  display: flex;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.gift__icon {
+  margin-bottom: 48px;
+}

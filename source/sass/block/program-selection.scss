@@ -1,0 +1,32 @@
+.program-selection__title {
+  color: $text-basic-dark;
+  font-family: $font-oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.program-selection__container {
+  width: 320px;
+  margin: 0 auto;
+  background-color: $bg-basic-light;
+}
+
+.program-selection__description {
+  color: $text-basic-dark;
+  font-family: $font-oswald;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.program-selection__title-wrapper {
+  padding: 27px 29px 39px 20px;
+  box-sizing: border-box;
+  border-top: 1px solid $border-grey;
+}

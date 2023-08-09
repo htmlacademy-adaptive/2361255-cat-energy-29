@@ -1,0 +1,27 @@
+.additionally-products__container {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-left: 20px;
+  background-color: $bg-basic-light;
+  box-sizing: border-box;
+}
+
+.additionally-products__list {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-right: 20px;
+}
+
+.additionally-products__title {
+  color: $text-basic-dark;
+  font-family: $font-oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 36px;
+  box-sizing: border-box;
+}

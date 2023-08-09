@@ -1,0 +1,11 @@
+.social__list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid $border-grey;
+}
