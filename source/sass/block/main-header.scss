@@ -1,6 +1,19 @@
 .main-header__wrapper {
+  background-color: $bg-basic-light;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 33px 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.main-header__logo-wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 11px 20px;
   margin: 0 auto;
@@ -9,5 +22,18 @@
   align-items: center;
   width: 320px;
   box-sizing: border-box;
-  background-color: $bg-basic-light;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    padding-top: 25px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

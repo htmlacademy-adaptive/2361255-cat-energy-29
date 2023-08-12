@@ -2,6 +2,10 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
 }
 
 .programs__list {
