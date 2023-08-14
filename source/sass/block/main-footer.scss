@@ -1,20 +1,13 @@
-.main-footer {
-  display: flex;
-  padding: 40px 20px;
-  box-sizing: border-box;
-  background-color: $bg-grey;
-
-  @media (min-width: $tablet-width) {
-    padding: 55px 30px;
-  }
-}
-
 .main-footer__container {
-  width: 280px;
+  width: 320px;
+  padding: 40px 20px;
   margin: 0 auto;
+  background-color: $bg-grey;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+    padding: 55px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,16 +1,30 @@
 .radio-target {
   border: none;
-  border-bottom: 1px solid $border-grey-eb;
-  border-top: 1px solid $border-grey-eb;
-  box-sizing: border-box;
   margin: 0;
+  box-sizing: border-box;
   padding: 22px 20px 0 20px;
+  border-top: 1px solid $border-grey-eb;
+  border-bottom: 1px solid $border-grey-eb;
+  background-color: $bg-basic-light;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+    padding: 0px 70px;
+  }
 }
 
 .radio-target__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid $border-grey-eb;
+    box-sizing: border-box;
+    padding: 23px 27px 27px 27px;
+  }
 }
 
 .radio-target__control-label {
@@ -20,6 +34,11 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+  }
 }
 
 .radio-target__item {
