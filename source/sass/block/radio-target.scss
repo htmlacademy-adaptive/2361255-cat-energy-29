@@ -9,8 +9,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding: 0;
-    padding: 0px 70px;
   }
 }
 
@@ -19,11 +22,14 @@
   margin: 0;
   padding: 0;
 
-
   @media (min-width: $tablet-width) {
     border: 1px solid $border-grey-eb;
     box-sizing: border-box;
     padding: 23px 27px 27px 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px;
   }
 }
 

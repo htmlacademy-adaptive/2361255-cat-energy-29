@@ -1,9 +1,13 @@
 .program-selection__container {
-  width: 320px;
+  width: $mobile-width;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 
@@ -14,7 +18,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding: 67px 250px 66px 70px;
+    padding: 67px 70px 66px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 110px 66px 110px;
   }
 }
 

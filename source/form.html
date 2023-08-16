@@ -35,7 +35,9 @@
         </ul>
       </nav>
     </div>
+
   </header>
+
   <main>
 
     <section class="program-selection">
@@ -48,61 +50,58 @@
           </p>
         </div>
         <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="POST">
-
-          <div class="form__contain form__contain--cat">
-
-            <div class="form__label-wrapper">
-              <label class="form__label" for="cat-name">ИМЯ:*</label>
-              <input class="form-control" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+          <div class="form__wrapper-cat">
+            <div class="form__contain form__contain--cat">
+              <div class="form__label-wrapper">
+                <label class="form__label" for="cat-name">ИМЯ:*</label>
+                <input class="form-control" type="text" name="cat-name" id="cat-name" placeholder="Барсик" required>
+              </div>
+              <div class="form__label-wrapper">
+                <label class="form__label" for="weight">Вес (кг):*</label>
+                <input class="form-control" type="text" name="weight" id="weight" placeholder="7" required>
+              </div>
+              <div class="form__label-wrapper">
+                <label class="form__label" for="age">Возраст (лет):</label>
+                <input class="form-control" type="text" name="age" id="age" placeholder="7">
+              </div>
             </div>
 
-            <div class="form__label-wrapper">
-              <label class="form__label" for="weight">Вес (кг):*</label>
-              <input class="form-control" type="text" name="weight" id="weight" placeholder="7" required>
-            </div>
+            <fieldset class="form__radio radio-target">
+              <legend class="visually-hidden">Цель программы</legend>
+              <ul class="radio-target__list">
 
-            <div class="form__label-wrapper">
-              <label class="form__label" for="age">Возраст (лет):</label>
-              <input class="form-control" type="text" name="age" id="age" placeholder="7">
-            </div>
+                <li class="radio-target__item">
+                  <label class="radio-target__control">
+                    <input class="radio-target__control-input" type="radio" name="radio-target__control"
+                      value="weight-loss" checked>
+                    <span class="radio-target__control-mark"></span>
+                    <span class="radio-target__control-label">Похудение</span>
+                  </label>
+                </li>
+
+                <li class="radio-target__item">
+                  <label class="radio-target__control">
+                    <input class="radio-target__control-input" type="radio" name="radio-target__control"
+                      value="weight-gain">
+                    <span class="radio-target__control-mark"></span>
+                    <span class="radio-target__control-label">Набор массы</span>
+                  </label>
+                </li>
+
+                <li class="radio-target__item">
+                  <label class="radio-target__control">
+                    <input class="radio-target__control-input" type="radio" name="radio-target__control" value="advice">
+                    <span class="radio-target__control-mark"></span>
+                    <span class="radio-target__control-label">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
           </div>
-
-          <fieldset class="form__radio radio-target">
-            <legend class="visually-hidden">Цель программы</legend>
-            <ul class="radio-target__list">
-
-              <li class="radio-target__item">
-                <label class="radio-target__control">
-                  <input class="radio-target__control-input" type="radio" name="radio-target__control"
-                    value="weight-loss" checked>
-                  <span class="radio-target__control-mark"></span>
-                  <span class="radio-target__control-label">Похудение</span>
-                </label>
-              </li>
-
-              <li class="radio-target__item">
-                <label class="radio-target__control">
-                  <input class="radio-target__control-input" type="radio" name="radio-target__control"
-                    value="weight-gain">
-                  <span class="radio-target__control-mark"></span>
-                  <span class="radio-target__control-label">Набор массы</span>
-                </label>
-              </li>
-
-              <li class="radio-target__item">
-                <label class="radio-target__control">
-                  <input class="radio-target__control-input" type="radio" name="radio-target__control" value="advice">
-                  <span class="radio-target__control-mark"></span>
-                  <span class="radio-target__control-label">Не знаю (Нужен ваш совет)</span>
-                </label>
-              </li>
-            </ul>
-          </fieldset>
-
           <div class="form__container-user">
             <div class="form__wrapper-strip  form__wrapper-strip--user">
               <div class="form__wrapper-title">
-                <h2 class="form__title">Контактные данные <br>(владельца кота)</h2>
+                <h2 class="form__title">Контактные данные<br>(владельца кота)</h2>
               </div>
             </div>
             <div class="form__contain form__contain--user">
@@ -139,7 +138,7 @@
                 <h2 class="form__title">Дополнительно</h2>
               </div>
             </div>
-            <div class="chekbox-target form__contain form__contain--chexboxs">
+            <div class="chekbox-target__contain">
               <ul class="chekbox-target__list">
                 <li class="chekbox-target__item">
                   <label class="chekbox-target__control">
@@ -182,7 +181,7 @@
 
     <section class="map">
       <div class="map__container">
-        <div class="map__wrapper map__wrapper--invert">
+        <div class="map__wrapper">
           <h2 class="map__title">приглашаем к сотрудничеству дилеров!</h2>
           <address class="map__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>

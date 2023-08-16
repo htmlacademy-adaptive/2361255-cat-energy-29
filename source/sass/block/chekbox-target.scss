@@ -1,14 +1,31 @@
+.chekbox-target__contain {
+  padding: 0 20px 34px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px 54px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px 61px 110px;
+  }
+}
+
 .chekbox-target__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-
+  display: grid;
+  gap: 12px;
 
   @media (min-width: $tablet-width) {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px 80px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -28,13 +45,4 @@
     font-size: 20px;
     font-weight: 400;
   }
-}
-
-.chekbox-target__item {
-  margin-bottom: 13px;
-}
-
-
-.chekbox-target__item:last-child {
-  margin-bottom: 0;
 }

@@ -1,5 +1,5 @@
 .main-footer__container {
-  width: 320px;
+  width: $mobile-width;
   padding: 40px 20px;
   margin: 0 auto;
   background-color: $bg-grey;
@@ -11,6 +11,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 66px 110px;
   }
 }
 

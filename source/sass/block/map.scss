@@ -13,6 +13,14 @@
     padding: 60px 70px;
     gap: 308px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 195px);
+    padding: 61px 94px 60px 80px;
+    gap: 0;
+    width: 565px;
+  }
 }
 
 .map__container {
@@ -21,6 +29,10 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
   }
 }
 
