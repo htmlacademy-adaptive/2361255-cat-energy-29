@@ -1,13 +1,18 @@
 .gift-container {
-  width: 320px;
+  width: $mobile-width;
   padding: 35px 20px;
   box-sizing: border-box;
   margin: 0 auto;
   background-color: $bg-basic-light;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
     padding: 70px 30px 75px 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding: 0;
   }
 }
 
@@ -29,6 +34,11 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 63px 42px 43px 42px;
+  }
+
 }
 
 .gift__title {
@@ -43,6 +53,10 @@
   @media (min-width: $tablet-width) {
     width: 161px;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
   }
 }
 
@@ -61,5 +75,9 @@
     width: 80px;
     height: 83px;
     margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
   }
 }

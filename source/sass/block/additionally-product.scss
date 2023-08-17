@@ -22,6 +22,10 @@
 
 .additionally-product__button {
   width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
 
 .additionally-product__item {
@@ -33,7 +37,19 @@
     border-right: 1px solid $border-grey-cd;
     padding: 26px 38px 28px 38px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    border-left: none;
+    border-right: none;
+    padding: 15px 0 17px 0;
+  }
+
 }
 
 .additionally-product__item:first-child {
