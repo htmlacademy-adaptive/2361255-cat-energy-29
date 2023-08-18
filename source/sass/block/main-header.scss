@@ -1,6 +1,24 @@
 .main-header__wrapper {
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    padding: 0 33px 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    position: relative;
+    z-index: 1;
+    padding: 55px 110px 0 110px;
+  }
+}
+
+.main-header__logo-wrapper {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 11px 20px;
   margin: 0 auto;
@@ -9,5 +27,18 @@
   align-items: center;
   width: 320px;
   box-sizing: border-box;
-  background-color: $bg-basic-light;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin: 0;
+    align-items: center;
+    padding: 0;
+    padding-top: 25px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

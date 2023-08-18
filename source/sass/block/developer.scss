@@ -2,6 +2,12 @@
   text-decoration: none;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: flex;
+    gap: 23px;
+  }
 }
 
 .developer__text {

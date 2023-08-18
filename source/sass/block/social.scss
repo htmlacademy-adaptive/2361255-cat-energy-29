@@ -2,10 +2,16 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 24px;
   margin: 0;
   box-sizing: border-box;
   justify-content: center;
   padding: 20px 0;
   border-bottom: 1px solid $border-grey;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
 }
