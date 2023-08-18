@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     padding: 77px 316px 57px 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 57px 55px 25px;
+  }
 }
 
 .program-card__title {
@@ -22,6 +26,10 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 73px;
   }
 }
 

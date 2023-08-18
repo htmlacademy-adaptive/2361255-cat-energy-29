@@ -1,5 +1,4 @@
 .main-header__wrapper {
-
   @media (min-width: $tablet-width) {
     width: $tablet-width;
     padding: 0 33px 0 20px;
@@ -12,6 +11,9 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    position: relative;
+    z-index: 1;
+    padding: 55px 110px 0 110px;
   }
 }
 

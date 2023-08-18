@@ -4,8 +4,13 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: $tablet-width;
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    margin-bottom: 71px;
   }
 }
 
@@ -20,8 +25,15 @@
   @media (min-width: $tablet-width) {
     gap: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
+    padding: 0 110px;
+  }
 }
 
-.programs {
-  background-color: $bg-basic-light;
+.program-list__item {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
