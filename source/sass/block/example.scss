@@ -19,7 +19,7 @@
 .example__container {
   width: 320px;
   margin: 0 auto;
-  padding: 25px 20px 40px 20px;
+  padding: 25px 20px 35px 20px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -76,7 +76,7 @@
   display: flex;
   gap: 32px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 
 
   @media (min-width: $tablet-width) {
@@ -86,6 +86,7 @@
 }
 
 .example__wrapper {
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -96,7 +97,15 @@
 
 .example__item {
   margin: 0 auto;
-  padding-top: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // text-align: center;
+  // justify-content: flex-start;
+  box-shadow: inset 0 0 0 1px $border-grey-cd;
+  border-radius: 3px;
+  width: 124px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -110,7 +119,7 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  margin-bottom: 7px;
+  padding: 16px 5px 0 5px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 11px;
@@ -127,6 +136,11 @@
   font-weight: 400;
   text-align: center;
   line-height: 12px;
+  margin: 0;
+  max-width: 77px;
+  padding: 0 5px;
+  background-color: $bg-grey-dark;
+  transform: translateY(9px);
 
   @media (min-width: $tablet-width) {
     font-size: 14px;

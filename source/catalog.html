@@ -18,27 +18,27 @@
           <img class="logo__text" src="img/header/logo-site-mobile.svg" width="101" height="18"
             alt="Текстовый логотип сайта">
         </a>
-        <button class="main-nav__toggle main-nav__toggle--close" type="button">
-          <img src="img/header/burger.svg" width="24" height="24" alt="Открыть меню сайта">
-        </button>
       </div>
-      <nav class="main-nav main-nav--close">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
+      <nav class="main-heder__nav main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+            меню</span></button>
+
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link .site-list__link--light site-list__link--active" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link .site-list__link--light" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link .site-list__link--light" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-    </div>
 
   </header>
-
   <main class="main">
     <section class="products">
       <div class="products__container">
@@ -355,7 +355,9 @@
           <h2 class="map__title">приглашаем к сотрудничеству дилеров!</h2>
           <address class="map__descr">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
         </div>
-        <iframe class="map__link"></iframe>
+        <iframe class="map__link"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A995ecd5d815b28bd183afc558411fa61d58b43e2f72ebeb022cbd5c4cc2fd4f5&amp;source=constructor"
+          width="100%" height="400" frameborder="0"></iframe>
       </div>
     </section>
 
@@ -428,6 +430,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

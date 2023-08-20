@@ -1,15 +1,55 @@
-.program-card {
-  background-color: $bg-grey;
-  position: relative;
-  padding: 30px 20px 14px 20px;
-
+.program-list__card {
   @media (min-width: $tablet-width) {
-    padding: 77px 316px 57px 52px;
+    width: 708px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 47px 57px 55px 25px;
+    width: 570px;
   }
+
+}
+
+.program-card {
+  background-color: $bg-grey;
+  position: relative;
+  padding: 0 20px 20px 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 63px 53px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0px 61px 55px 52px;
+  }
+}
+
+.program-card::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: $bg-button-basic;
+  top: 24px;
+  left: 20px;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    right: 63px;
+    left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    right: auto;
+    left: 52px;
+  }
+
 }
 
 .program-card__title {
@@ -20,16 +60,23 @@
   font-weight: 400;
   line-height: 37px;
   text-transform: uppercase;
+  padding-top: 30px;
   margin-bottom: 29px;
+  margin-left: 71px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
+    padding-top: 77px;
+    margin-bottom: 24px;
+    margin-left: 0;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 73px;
+    margin-left: 194px;
+    margin-bottom: 77px;
   }
 }
 
@@ -39,14 +86,21 @@
   font-family: $font-lato;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 42px;
+  padding-bottom: 23px;
   font-weight: 400;
+  border-bottom: 1px solid $border-grey;
 
   @media (min-width: $tablet-width) {
     color: $text-basic-dark;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    max-width: 340px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: max-content;
   }
 }
 
@@ -58,6 +112,8 @@
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  padding-top: 19px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

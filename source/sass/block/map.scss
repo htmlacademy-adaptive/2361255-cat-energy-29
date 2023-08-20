@@ -75,28 +75,26 @@
   }
 }
 
-// Как сделать беэкграунд
 .map__link {
+  background-color: $bg-grey;
+  display: block;
   background-image: url("../img/map/location.png");
-  width: 310px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: $mobile-width;
   height: 362px;
-  border: none;
-}
-
-.map__wrapper--catalog {
-  background-color: $bg-grey;
-}
-
-.map__wrapper--invert {
-  background-color: $bg-grey;
-}
-
-// УБРАТЬ
-.map {
-  width: 320px;
   margin: 0 auto;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.map__wrapper--invert {
+  background-color: $bg-grey;
 }
