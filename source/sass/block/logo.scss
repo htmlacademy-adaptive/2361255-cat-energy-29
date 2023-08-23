@@ -3,4 +3,9 @@
   top: 39%;
   left: 57%;
   transform: translate(-50%, -50%);
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+    left: 70%;
+  }
 }
