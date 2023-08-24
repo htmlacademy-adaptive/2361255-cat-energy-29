@@ -75,7 +75,7 @@
 }
 
 .radio-target__control-input[type="radio"] {
-  &:checked + .radio-target__control-label::before {
+  &:checked+.radio-target__control-label::before {
     position: absolute;
     margin: 8.5px;
     width: 13px;

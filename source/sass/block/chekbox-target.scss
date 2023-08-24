@@ -79,7 +79,7 @@
 }
 
 .chekbox-target__control-input[type="checkbox"] {
-  &:checked + .chekbox-target__control-label::before {
+  &:checked+.chekbox-target__control-label::before {
     display: block;
     width: 26px;
     height: 26px;
