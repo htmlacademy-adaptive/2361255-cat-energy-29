@@ -17,15 +17,19 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 195px);
-    padding: 61px 94px 60px 80px;
-    gap: 0;
+    padding: 60px 78px 60px 80px;
+    gap: 55px;
     width: 565px;
+    position: absolute;
+    left: 110px;
+    top: 95px;
   }
 }
 
 .map__container {
   margin: 0 auto;
   width: 320px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
@@ -72,31 +76,29 @@
     text-align: right;
     font-size: 16px;
     font-weight: 400;
+    min-height: 80px;
   }
 }
 
-// Как сделать беэкграунд
 .map__link {
+  background-color: $bg-grey;
+  display: block;
   background-image: url("../img/map/location.png");
-  width: 310px;
-  height: 362px;
-  border: none;
-}
-
-.map__wrapper--catalog {
-  background-color: $bg-grey;
-}
-
-.map__wrapper--invert {
-  background-color: $bg-grey;
-}
-
-// УБРАТЬ
-.map {
-  width: 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: $mobile-width;
   margin: 0 auto;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.map__wrapper--invert {
+  background-color: $bg-grey;
 }
