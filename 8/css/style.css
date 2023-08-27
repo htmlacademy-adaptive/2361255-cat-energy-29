@@ -255,9 +255,14 @@ a {
 }
 
 .hero {
-  background-image: url("../img/hero/hero-background.jpg"), linear-gradient(to bottom, #63a63b 63%, #ffffff 63%);
+  background-image: url("../../img/hero/hero-background-mobile.png"), linear-gradient(to bottom, #63a63b 63%, #ffffff 63%);
   background-position: top;
   background-repeat: no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../img/hero/hero-background-mobile@2x.png");
+  }
 }
 @media (min-width: 768px) {
   .hero {
