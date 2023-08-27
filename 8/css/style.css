@@ -255,13 +255,14 @@ a {
 }
 
 .hero {
-  background-image: url("../../img/hero/hero-background-mobile.png"), linear-gradient(to bottom, #63a63b 63%, #ffffff 63%);
+  background-image: url("../img/hero/hero-background-mobile.jpg"), linear-gradient(to bottom, #63a63b 63%, #ffffff 63%);
   background-position: top;
   background-repeat: no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../img/hero/hero-background-mobile@2x.png");
+    background-image: url("../img/hero/hero-background-mobile@2x.jpg");
+    background-size: 320px 302px;
   }
 }
 @media (min-width: 768px) {
@@ -514,6 +515,7 @@ a {
 }
 
 .programs__wrapper {
+  width: 320px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
