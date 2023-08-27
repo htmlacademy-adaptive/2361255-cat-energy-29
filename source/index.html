@@ -4,8 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/icon-180х180.png">
+  <link rel="manifest" href="img/favicons/manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>Кэт энерджи</title>
 </head>
 
 <body class="page__body">
@@ -14,9 +17,16 @@
     <div class="main-header__wrapper">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo logo" href="#">
-          <img class="logo__image" src="img/header/logo-cat-mobile.svg" width="60" height="50" alt="Логотип сайта-кот">
-          <img class="logo__text" src="img/header/logo-site-mobile.svg" width="101" height="18"
-            alt="Текстовый логотип сайта">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg" width="60" height="50">
+            <img class="logo__image" src="img/header/logo-mobile.svg" width="33" height="38" alt="Логотип сайта-кот">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/header/logo-text-tablet.svg" width="101" height="18">
+            <img class="logo__text" src="img/header/logo-text-mobile.svg" width="101" height="18"
+              alt="Текстовый логотип сайта">
+          </picture>
         </a>
       </div>
       <nav class="main-heder__nav main-nav main-nav--closed main-nav--nojs">
@@ -25,7 +35,7 @@
 
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item ">
+            <li class="site-list__item">
               <a class="site-list__link site-list__link--light site-list__link--active" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
@@ -46,13 +56,17 @@
       <div class="hero__container">
         <h1 class="hero__title">Функциональное питание для котов</h1>
         <p class="hero__description">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="img/hero/hero-product.png" width="552" height="499"
-          alt="Пример упаковки питания для котов">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop.png, img/hero/hero-desktop@2x.png 2x"
+            width="552" height="499">
+          <source media="(min-width: 768px)" srcset="img/hero/hero-tablet.png, img/hero/hero-tablet@2x.png 2x"
+            width="709" height="609">
+          <img class="hero__image" src="img/hero/hero-mobile.png" width="280" height="270"
+            srcset="img/hero/hero-mobile@2x.png 2x" alt="Пример упаковки питания для котов">
+        </picture>
         <a class="hero__link button" href="form.html">подобрать программу</a>
       </div>
     </section>
-
-
     <section class="programs">
       <div class="programs__wrapper">
         <h2 class="programs__title visually-hidden">Программы питания</h2>
@@ -128,11 +142,14 @@
           </div>
         </div>
         <div class="example__image-wrapper">
-          <img class="example__image example-slider" src="img/example/result.png" width="560" height="512"
-            alt="Фото кота до и после применения применения питания.">
+
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/example/compare-slider-tablet.png" width="560" height="512">
+            <img class="example__image" src="img/example/compare-slider-mobile.png" width="280" height="256"
+              alt="Пример упаковки питания для котов">
+          </picture>
           <!-- Здесь будет слайдер -->
         </div>
-
       </div>
     </section>
 

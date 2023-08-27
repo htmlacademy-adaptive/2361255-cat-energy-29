@@ -4,18 +4,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="img/favicons/icon-180х180.png">
+  <link rel="manifest" href="img/favicons/manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
-  <title>HTML Academy: Кэт энерджи</title>
+  <title>Кэт энерджи</title>
 </head>
 
 <body class="page__body">
+
   <header class="main-header">
     <div class="main-header__wrapper">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo logo" href="#">
-          <img class="logo__image" src="img/header/logo-cat-mobile.svg" width="33" height="38" alt="Логотип сайта-кот">
-          <img class="logo__text" src="img/header/logo-site-mobile.svg" width="101" height="18"
-            alt="Текстовый логотип сайта">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header/logo-desktop.svg" width="70" height="59">
+            <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg" width="60" height="50">
+            <img class="logo__image" src="img/header/logo-mobile.svg" width="33" height="38" alt="Логотип сайта-кот">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/header/logo-text-tablet.svg" width="101" height="18">
+            <img class="logo__text" src="img/header/logo-text-mobile.svg" width="101" height="18"
+              alt="Текстовый логотип сайта">
+          </picture>
         </a>
       </div>
       <nav class="main-heder__nav main-nav main-nav--closed main-nav--nojs">
@@ -25,13 +36,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link .site-list__link--light site-list__link--active" href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link .site-list__link--light" href="catalog.html">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link .site-list__link--light" href="form.html">Подбор программы</a>
+              <a class="site-list__link  site-list__link--active" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>

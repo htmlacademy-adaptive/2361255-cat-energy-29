@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-bottom: 40px;
-    background-color: $bg-grey;
+    background: linear-gradient(to top, $bg-grey 94%, $bg-basic-light 94%);
   }
 }
 
@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
   }
 }
 
@@ -46,8 +46,8 @@
 
 .product-card__image-wrapper {
   @media (min-width: $tablet-width) {
-    margin-top: -41px;
-    margin-bottom: 12px;
+    margin-top: -43px;
+    margin-bottom: 13px;
   }
 }
 
@@ -72,7 +72,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
   }
 }
 

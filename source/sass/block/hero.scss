@@ -1,15 +1,44 @@
-// Переделать
-// .hero {
-//   background-color: $bg-branded;
-// }
-
-.hero__container {
-  display: flex;
-  flex-direction: column;
+.hero {
   background-image: url("../img/hero/hero-background.jpg"),
     linear-gradient(to bottom, $bg-branded 63%, $bg-basic-light 63%);
   background-position: top;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/hero/hero-background-desktop.jpg"),
+      linear-gradient(to left, $bg-branded 50%, $bg-basic-light 50%);
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: -125px;
+    z-index: -1;
+    position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero/hero-background-desktop@2x.jpg"),
+        linear-gradient(to left, $bg-branded 50%, $bg-basic-light 50%);
+      background-size: contain;
+    }
+  }
+}
+
+
+//   background-color: $bg-branded;
+//   background-image: url("../img/hero/hero-background-desktop.jpg");
+
+//   background-position: right;
+//   margin-top: -110px;
+//   margin-bottom: 82px;
+//   background-repeat: no-repeat;
+// }
+
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
   width: 320px;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -17,6 +46,7 @@
   text-align: center;
   box-sizing: border-box;
   position: relative;
+
 
   @media (min-width: $tablet-width) {
     background: $bg-basic-light;
@@ -27,17 +57,13 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
-    background-color: $bg-branded;
-    background-image: url("../img/hero/hero-background-desktop.jpg"),
-      linear-gradient(to left, $bg-branded 50%, $bg-basic-light 50%);
-    background-repeat: no-repeat;
-    padding: 0;
-    background-position: right;
-    margin-top: -110px;
-    margin-bottom: 82px;
     min-height: 694px;
+    background: transparent;
+    padding: 230px 110px 0 110px;
+    margin-bottom: 88px;
   }
 }
+
 
 // .hero__content {
 //   display: flex;
@@ -76,8 +102,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 224px;
-    padding-left: 190px;
+    padding: 0;
+    margin-left: 80px;
   }
 }
 
@@ -102,8 +128,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 190px;
-    margin-bottom: 52px;
+    padding: 0;
+    margin-left: 80px;
   }
 }
 
@@ -118,8 +144,8 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 152px;
-    left: 550px;
+    top: 149px;
+    left: 559px;
   }
 }
 
@@ -142,7 +168,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 450px;
+    top: 463px;
     left: 190px;
   }
 }
