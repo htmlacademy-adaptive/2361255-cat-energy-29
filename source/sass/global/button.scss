@@ -16,28 +16,37 @@
   box-sizing: border-box;
   text-align: center;
   cursor: pointer;
-}
 
-.button--primary {
-  font-size: 16px;
-  line-height: 20px;
-  padding: 10px 5px;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    font-weight: 400;
+  &:hover,
+  &:focus-visible {
+    background-color: $bg-button-hover;
   }
-}
 
-.button--secondary {
-  color: $text-grey400;
-  font-family: $font-oswald;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-  background-color: $bg-grey;
-  padding: 10px 0;
+  &:active {
+    color: $button-text-active;
+  }
+
+  .button--primary {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px 5px;
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  .button--secondary {
+    color: $text-grey400;
+    font-family: $font-oswald;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    background-color: $bg-grey;
+    padding: 10px 0;
+  }
 }

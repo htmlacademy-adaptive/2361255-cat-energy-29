@@ -1,3 +1,16 @@
+.logo {
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+
 .logo__text {
   position: absolute;
   top: 39%;

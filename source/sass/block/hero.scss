@@ -30,17 +30,6 @@
   }
 }
 
-
-//   background-color: $bg-branded;
-//   background-image: url("../img/hero/hero-background-desktop.jpg");
-
-//   background-position: right;
-//   margin-top: -110px;
-//   margin-bottom: 82px;
-//   background-repeat: no-repeat;
-// }
-
-
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -68,22 +57,6 @@
     margin-bottom: 88px;
   }
 }
-
-
-// .hero__content {
-//   display: flex;
-//   flex-direction: column;
-//
-//   align-items: center;
-//   padding: 27px 35px 0;
-
-
-//   @media (min-width: $tablet-width) {
-//     max-width: 500px;
-//     padding-left: 90px;
-//     align-items: flex-start;
-//   }
-// }
 
 .hero__title {
   margin: 0;
@@ -159,6 +132,9 @@
   width: 280px;
   align-items: center;
   margin: 0 auto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     position: absolute;
