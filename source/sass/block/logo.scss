@@ -1,4 +1,5 @@
 .logo {
+  cursor: pointer;
 
   &:hover,
   &:focus-visible {
@@ -10,12 +11,12 @@
   }
 }
 
-
 .logo__text {
   position: absolute;
   top: 39%;
   left: 57%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     top: 50%;

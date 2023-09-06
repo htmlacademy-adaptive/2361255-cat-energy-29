@@ -4,6 +4,10 @@
   justify-content: space-between;
   align-items: center;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
     display: flex;
@@ -19,3 +23,21 @@
   line-height: 20px;
   margin: 0;
 }
+
+.developer__image {
+  fill: $logo-developer;
+
+  &:hover,
+  &:focus-visible {
+    fill: $bg-button-basic;
+  }
+}
+
+
+// .main-footer__logo {
+//   display: flex;
+//   justify-content: center;
+//   padding-bottom: 20px;
+//   border-bottom: 1px solid $border-grey;
+//   box-sizing: border-box;
+//   align-items: center;

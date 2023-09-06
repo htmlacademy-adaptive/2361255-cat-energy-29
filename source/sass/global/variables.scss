@@ -18,7 +18,7 @@ $text-grey222: #222222;
 
 // Button
 $bg-button-basic: #68b738;
-$bg-button-hover: #5EAA2F;
+$bg-button-hover: #5eaa2f;
 $button-text-active: #{transparentize($text-basic-light, 0.7)};
 
 // Border
@@ -32,8 +32,13 @@ $border-input: #e7e7e7;
 $icon-basic: #666666;
 
 // logo
-$logo-text-hover: #3E3E3E;
-$logo-text-active: #6B6B6B;
+$logo-text-hover: #3e3e3e;
+$logo-text-active: #6b6b6b;
+$logo-developer: #666666;
+
+// input
+$error: #ff8282;
+$radio: #bababa;
 
 $mobile-width: 320px;
 $tablet-width: 768px;

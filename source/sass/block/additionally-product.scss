@@ -28,26 +28,38 @@
 .additionally-product__button {
   width: 100%;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 11px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 244px;
     font-size: 16px;
+    margin-top: 0;
   }
 }
 
 .additionally-product__item {
   border-bottom: 1px solid $border-grey-cd;
-  padding: 12px 0 19px 0;
+  padding: 12px 0 20px 0;
+
+  &:first-child {
+    border-top: 1px solid $border-grey-cd;
+  }
 
   @media (min-width: $tablet-width) {
-    border-left: 1px solid $border-grey-cd;
-    border-right: 1px solid $border-grey-cd;
-    padding: 26px 38px 28px 38px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    padding: 12px 38px 28px 38px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
@@ -56,14 +68,12 @@
     grid-template-columns: 285px 285px 244px;
     display: grid;
     gap: 0 40px;
+    padding: 15px 0 16px;
     align-items: center;
-    padding: 13px 0 18px 0;
   }
 }
 
-.additionally-product__item:first-child {
-  border-top: 1px solid $border-grey-cd;
-}
+
 
 .additionally-product__quantity {
   color: $text-grey400;
@@ -74,7 +84,7 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    text-align: center;
+    text-align: end;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
@@ -90,15 +100,17 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    text-align: center;
+    text-align: end;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+    min-width: 52px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: flex-start;
+    min-width: 42px;
   }
 }
 
@@ -109,11 +121,12 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
-    gap: 49px;
+    gap: 40px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    margin-bottom: 0;
+    margin-top: 5px;
   }
 }

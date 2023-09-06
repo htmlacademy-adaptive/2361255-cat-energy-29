@@ -33,7 +33,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 0 63px 53px 52px;
+    padding: 0 63px 54px 52px;
 
     &::before {
       width: 200px;
@@ -132,7 +132,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
   }
 }
 
@@ -181,7 +181,7 @@
     opacity: 0.3;
   }
 
-  &:after {
+  &::after {
     content: "";
     background-image: url("../img/sprite.svg#arrow");
     width: 32px;
@@ -201,11 +201,11 @@
     display: block;
   }
 
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     font-weight: 400;
     padding: 0;
     line-height: 30px;
+    gap: 26px;
   }
 }

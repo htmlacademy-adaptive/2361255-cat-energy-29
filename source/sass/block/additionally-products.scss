@@ -1,17 +1,20 @@
-// .additionally-products__container {
-//   width: 320px;
-//   margin: 0 auto;
-//   box-sizing: border-box;
+.additionally-products__extra-wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  box-sizing: border-box;
 
-//   @media (min-width: $tablet-width) {
-//     width: $tablet-width;
-//   }
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
 
-//   @media (min-width: $desktop-width) {
-//     width: $desktop-width;
-//     padding-top: 0;
-//   }
-// }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 1221px;
+    margin: 0 auto;
+    margin-bottom: 87px;
+  }
+}
 
 .additionally-products__wrapper-strip {
   position: relative;
@@ -24,21 +27,16 @@
   }
 }
 
-//   @media (min-width: $desktop-width) {
-//     width: $desktop-width;
-//     margin: 0 auto;
-//   }
-// }
-
 .additionally-products__wrapper-strip::before {
   position: absolute;
   content: "";
-  top: 50%;
+  top: 65%;
   left: 0;
   right: 0;
   z-index: 1;
   height: 2px;
   background-color: $bg-branded;
+  width: 100%;
 }
 
 .additionally-products__title-wrapper {
@@ -52,6 +50,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
+    width: $desktop-width;
   }
 }
 
@@ -88,6 +87,9 @@
   @media (min-width: $tablet-width) {
     padding: 0 40px;
     margin: 0 -40px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px
   }
 
   @media (min-width: $desktop-width) {
@@ -96,30 +98,5 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
-  }
-}
-
-.additionally-products__extra-wrapper {
-  @media (min-width: $desktop-width) {
-    padding: 0 110px;
-    display: flex;
-    justify-content: space-between;
-    width: 1221px;
-    margin: 0 auto;
-    margin-bottom: 77px;
-  }
-}
-
-.additionally-products {
-  width: $mobile-width;
-  margin: 0 auto;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-width;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: $desktop-width;
   }
 }
