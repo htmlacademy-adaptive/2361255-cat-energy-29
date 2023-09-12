@@ -1,9 +1,9 @@
 .chekbox-target__contain {
-  padding: 0 20px 34px 20px;
+  padding: 0 20px 33px 20px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    padding: 0 70px 52px 70px;
+    padding: 0 70px 53px 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +64,13 @@
     width: 40px;
     height: 40px;
     padding: 7px;
+    margin-right: 20px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border-color: $radio;
+    outline: none;
   }
 }
 
@@ -71,22 +78,22 @@
   display: flex;
   min-height: 30px;
 
-
   @media (min-width: $tablet-width) {
     min-height: 40px;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 
 .chekbox-target__control-input[type="checkbox"] {
   &:checked + .chekbox-target__control-label::before {
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
     display: block;
     width: 26px;
     height: 26px;
     content: "";
-    background-image: url("../img/tick.svg");
+    background-image: url("../img/svg/tick.svg");
     background-position: center;
     background-repeat: no-repeat;
   }

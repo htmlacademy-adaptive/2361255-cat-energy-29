@@ -2,7 +2,7 @@
   border: none;
   margin: 0;
   box-sizing: border-box;
-  padding: 22px 20px 20px 20px;
+  padding: 20px 20px 16px 20px;
   border-top: 1px solid $border-grey-eb;
   border-bottom: 1px solid $border-grey-eb;
   background-color: $bg-basic-light;
@@ -29,7 +29,7 @@
   @media (min-width: $tablet-width) {
     border: 1px solid $border-grey-eb;
     box-sizing: border-box;
-    padding: 23px 27px 27px 27px;
+    padding: 21px 27px 27px 26px;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,6 +40,10 @@
 .radio-target__item {
   display: flex;
   flex-direction: row;
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .radio-target__control {
@@ -67,15 +71,24 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 13px;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    margin-right: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-right: 20px;
   }
-}
 
+  &:hover,
+  &:focus-visible {
+    border-color: $radio;
+    outline: none;
+  }
+}
 
 .radio-target__control-input[type="radio"]:checked + .radio-target__control-label::before {
   position: absolute;

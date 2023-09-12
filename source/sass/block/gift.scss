@@ -1,13 +1,13 @@
 .gift-container {
   width: $mobile-width;
-  padding: 35px 20px;
+  padding: 34px 20px;
   box-sizing: border-box;
   margin: 0 auto;
-  background-color: $bg-basic-light;
+
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding: 70px 30px 75px 31px;
+    padding: 69px 30px 75px 31px;
   }
 
   @media (min-width: $desktop-width) {
@@ -17,26 +17,43 @@
 }
 
 .gift__wrapper {
-  background-image: url("../img/catalog/gifts-background.png");
+  background-image: url("../img/catalog/gifts-background-mobile.png");
   background-repeat: no-repeat;
   background-color: $bg-branded;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
-  padding: 58px 61px 42px 58px;
+  padding: 58px 61px 43px 58px;
   flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/catalog/gifts-background-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     padding: 57px 125px 60px 77px;
     flex-direction: row;
     justify-content: space-between;
+    background-image: url("../img/catalog/gifts-background-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/gifts-background-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 63px 42px 43px 42px;
+    background-image: url("../img/catalog/gifts-background-desktop.png");
+    padding: 54px 42px 45px 42px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/gifts-background-desktop@2x.png");
+    }
   }
 }
 
@@ -67,8 +84,9 @@
 
 .gift__icon {
   width: 78px;
-  height: 81px;
+  height: 80px;
   margin-bottom: 48px;
+  background-image: url("../../img/sprite.svg#gift__icon");
 
   @media (min-width: $tablet-width) {
     width: 80px;
@@ -76,8 +94,7 @@
     margin: 0;
   }
 
-  //   @media (min-width: $desktop-width) {
-  //     margin-bottom: 46px;
-  //   }
-  //
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
