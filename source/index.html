@@ -135,17 +135,34 @@
             <span class="example__legend-total">15 000 РУБ.</span>
           </div>
         </div>
-        <div class="example__image-wrapper">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/example/compare-slider-tablet.png" width="560" height="512">
-            <img class="example__image" src="img/example/compare-slider-mobile.png" width="280" height="256"
-              alt="Пример упаковки питания для котов">
-          </picture>
-          <!-- Здесь будет слайдер -->
-        </div>
-      </div>
-    </section>
 
+        <div class="example__image-wrapper slider">
+          <div class="slider__before-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider/before-tablet.png" width="560" height="512"
+                srcset="img/slider/before-tablet@2x.png 2x">
+              <img class="slider__before" src="img/slider/before-mobile.png" width="280" height="256"
+                srcset="img/slider/before-mobile@2x.png 2x" alt="Фото толстого кота до прохождения программы">
+            </picture>
+          </div>
+          <div class="slider__button-wrapper">
+            <svg class="slider__button-toggle" width="40" height="40"
+              aria-label="Кнопка слайдера, чтобы менять изображение кота.">
+              <use xlink:href="img/sprite.svg#slider__button-toggle"></use>
+            </svg>
+            <span class="slider__button-line"></span>
+          </div>
+
+          <div class="slider__after-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/slider/after-tablet.png" width="560" height="512"
+                srcset="img/slider/after-tablet@2x.png 2x">
+              <img class="slider__after" src="img/slider/after-mobile.png" width="280" height="256"
+                srcset="img/slider/after-mobile@2x.png 2x" alt="Фото худого кота после прохождения программы">
+            </picture>
+          </div>
+        </div>
+    </section>
     <section class="map">
       <div class="map__container">
         <div class="map__wrapper">
@@ -196,7 +213,7 @@
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="developer__text">HTML Academy</p>
           <svg class="developer__image" width="27" height="34" role="img" aria-labelledby="Cайт HTML Academy">
-            <use href=" img/sprite-logo.svg#developer__image">aria-hidden="true"></use>
+            <use href="img/sprite-logo.svg#developer__image">aria-hidden="true"></use>
           </svg>
         </a>
       </div>

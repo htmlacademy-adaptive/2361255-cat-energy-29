@@ -210,16 +210,15 @@
     display: grid;
     grid-column: 1/2;
     grid-template-columns: 1fr;
-    margin-bottom: 75px;
-  }
-
-  @media (min-width: $desktop-width) {
     margin-bottom: 67px;
   }
 }
 
-
 .example__image-wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     grid-column: 2/3;
     grid-row: 1/4;

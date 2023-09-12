@@ -30,7 +30,6 @@
     border: 1px solid $border-grey-eb;
     box-sizing: border-box;
     padding: 21px 27px 27px 26px;
-    ;
   }
 
   @media (min-width: $desktop-width) {
@@ -91,8 +90,7 @@
   }
 }
 
-
-.radio-target__control-input[type="radio"]:checked+.radio-target__control-label::before {
+.radio-target__control-input[type="radio"]:checked + .radio-target__control-label::before {
   position: absolute;
   top: 30%;
   left: 30%;

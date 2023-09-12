@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-width;
-    padding: 63px 30px 69px 30px;
+    padding: 62px 30px 69px 30px;
     box-sizing: border-box;
   }
 
@@ -35,7 +35,7 @@
     line-height: 60px;
     text-align: left;
     padding: 0;
-    margin-bottom: 135px;
+    margin-bottom: 83px;
   }
 
   @media (min-width: $desktop-width) {
@@ -52,7 +52,7 @@
   justify-content: center;
 
   @media (min-width: $tablet-width) {
-    gap: 65px 60px;
+    gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -67,10 +67,10 @@
   @media (min-width: $tablet-width) {
     width: 324px;
     border: none;
+    margin-top: 54px;
   }
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin-top: 53px;
   }
 }

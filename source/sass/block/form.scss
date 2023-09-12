@@ -6,6 +6,7 @@
   line-height: 18px;
   text-transform: uppercase;
 
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     font-weight: 400;
@@ -71,8 +72,10 @@
 .form__contain--area {
   padding-bottom: 26px;
 
+
   @media (min-width: $tablet-width) {
     padding: 0 70px 65px 70px;
+    gap: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,6 +90,22 @@
   margin: 0;
 }
 
+.form__icon {
+  fill: none;
+  stroke: $text-basic-dark;
+  display: block;
+  right: 5%;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    right: 2%;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 3%;
+  }
+}
+
 .form__control {
   color: $text-grey400;
   font-family: $font-oswald;
@@ -95,8 +114,8 @@
   text-transform: uppercase;
   padding: 11px 14px 9px 14px;
   box-sizing: border-box;
-  flex-grow: 1;
   border: 1px solid $border-input;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -114,9 +133,13 @@
     outline: none;
   }
 
-  &:required:invalid {
+  &:invalid {
     border-color: $error;
   }
+}
+
+.form__user-wrapper {
+  position: relative;
 }
 
 .form__control--text-area {
@@ -250,6 +273,7 @@
     text-align: start;
     font-size: 16px;
     font-weight: 400;
+    margin-top: -5px;
   }
 }
 
@@ -287,10 +311,8 @@
 
 .form__button {
   @media (min-width: $tablet-width) {
-    padding: 17px 20px;
+    padding: 14px 20px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
-
-// input:required:invalid {
-//   border-color: red;
-// }
