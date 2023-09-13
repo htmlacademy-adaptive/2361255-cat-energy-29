@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/icon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/icon-16x16.png">
   <link rel="manifest" href="img/favicons/manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Кэт энерджи</title>
 </head>
 
@@ -25,7 +25,7 @@
             <img class="logo__image" src="img/header/logo-mobile.svg" width="33" height="38" alt="Логотип сайта-кот">
           </picture>
           <svg class="logo__text" width="101" height="18" role="img" aria-label="Текстовый логотип сайта">
-            <use href="img/sprite-logo.svg#logo__text" aria-hidden="true"></use>
+            <use xlink:href="img/sprite.svg#logo__text" aria-hidden="true"></use>
           </svg>
         </a>
       </div>
@@ -148,7 +148,7 @@
           <div class="slider__button-wrapper">
             <svg class="slider__button-toggle" width="40" height="40"
               aria-label="Кнопка слайдера, чтобы менять изображение кота.">
-              <use xlink:href="img/sprite.svg#slider__button-toggle"></use>
+              <use href="img/sprite.svg#slider__button-toggle"></use>
             </svg>
             <span class="slider__button-line"></span>
           </div>
@@ -183,7 +183,7 @@
 
       <a class="main-footer__logo" href="catalog.html">
         <svg class="main-footer__logo-text" width="128" height="24" role="img" aria-label="Текстовый логотип сайта.">
-          <use href="img/sprite-logo.svg#main-footer__logo"></use>
+          <use href="img/sprite.svg#main-footer__logo"></use>
         </svg>
       </a>
 
@@ -192,7 +192,11 @@
 
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте.</span>
+            <a class="social__link" href="#">
+              <svg class="social__icon" width="28" height="22" role="img" aria-labelledby="vk">
+                <title id="vk">Вконтакте.</title>
+                <use href="img/sprite.svg#vk"></use>
+              </svg>
             </a>
           </li>
 
@@ -213,7 +217,7 @@
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="developer__text">HTML Academy</p>
           <svg class="developer__image" width="27" height="34" role="img" aria-labelledby="Cайт HTML Academy">
-            <use href="img/sprite-logo.svg#developer__image">aria-hidden="true"></use>
+            <use href="img/sprite.svg">aria-hidden="true"></use>
           </svg>
         </a>
       </div>

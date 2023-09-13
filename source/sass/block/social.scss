@@ -24,13 +24,12 @@
   &::before {
     content: "";
     display: block;
-    background-color: $icon-basic;
-    // mask: center / contain no-repeat;
+    fill: $icon-basic;
   }
 
   &:hover::before,
   &:focus-visible::before {
-    background-color: $bg-button-basic;
+    fill: $bg-button-basic;
   }
 
   &:active::before {
@@ -40,7 +39,7 @@
 
 .social__link--vkontakte {
   &::before {
-    mask-image: url("../img/sprite.svg#vk");
+    background-image: url("../img/svg/other/vk.svg");
     width: 28px;
     height: 22px;
   }
@@ -48,7 +47,7 @@
 
 .social__link--youtube {
   &::before {
-    mask-image: url("../img/sprite.svg#youtube");
+    background-image: url("../img/svg/other/youtube.svg");
     width: 28px;
     height: 22px;
   }
@@ -56,7 +55,7 @@
 
 .social__link--telegram {
   &::before {
-    mask-image: url("../img/sprite.svg#telegram");
+    background-image: url("../img/svg/other/telegramm.svg");
     width: 28px;
     height: 22px;
   }
