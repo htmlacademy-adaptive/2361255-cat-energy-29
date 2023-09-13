@@ -40,10 +40,6 @@
 .radio-target__item {
   display: flex;
   flex-direction: row;
-
-  &:disabled {
-    opacity: 0.3;
-  }
 }
 
 .radio-target__control {
@@ -87,6 +83,10 @@
   &:focus-visible {
     border-color: $radio;
     outline: none;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 

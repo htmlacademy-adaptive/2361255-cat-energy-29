@@ -11,9 +11,8 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import browser from 'browser-sync';
 import browserSync from 'browser-sync';
-import del from 'del';
+import del from "del";
 import svgstore from 'gulp-svgstore';
-// import { stacksvg } from "gulp-stacksvg";
 
 // Styles
 
@@ -84,17 +83,6 @@ const sprite = () => {
     .pipe(gulp.dest('build/img'))
 }
 
-// const stack = () => {
-//   return gulp.src(['source/img/svg/sprite/*.svg'])
-//     .pipe(stacksvg({ output: 'stack' }))
-//     .pipe(svgstore({
-//       inlineSvg: true
-//     }))
-//     .pipe(rename('sprite.svg'))
-//     .pipe(gulp.dest(`build/img/svg/sprite`))
-// }
-
-
 //Copy
 const copy = (done) => {
   gulp.src([
@@ -111,7 +99,7 @@ const copy = (done) => {
 // clean
 
 const clean = () => {
-  return del('build')
+  return del("build");
 }
 
 // Server

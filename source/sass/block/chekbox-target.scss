@@ -72,6 +72,10 @@
     border-color: $radio;
     outline: none;
   }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .chekbox-target__item {
@@ -80,10 +84,6 @@
 
   @media (min-width: $tablet-width) {
     min-height: 40px;
-  }
-
-  &:disabled {
-    opacity: 0.3;
   }
 }
 

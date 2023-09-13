@@ -60,7 +60,7 @@
       <form class="program-selection__form form" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="form__wrapper-cat">
           <div class="form__contain form__contain--cat">
-            <div class="form__label-wrapper">
+            <div class="form__label-wrapper form__label-wrapper--error">
               <label class="form__label" for="cat-name">ИМЯ:*</label>
               <input class="form__control" type="text" name="cat-name" id="cat-name" value="Барсик" required>
             </div>
@@ -117,6 +117,7 @@
           </div>
           <div class="form__contain form__contain--user">
             <div class="form__user-wrapper">
+              <!-- Чтобы отобразить состояние ошибки, нужно добавить .form__label-wrapper--error элементу ниже -->
               <div class="form__label-wrapper">
                 <label class="form__label" for="mail">E-mail:*</label>
                 <input class="form__control" type="email" name="mail" id="mail" value="kuklachev@gmail.com" required>
@@ -125,7 +126,6 @@
                 </svg>
               </div>
             </div>
-
             <div class="form__user-wrapper">
               <div class="form__label-wrapper">
                 <label class="form__label" for="tel">Телефон:*</label>
@@ -228,20 +228,26 @@
 
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте.</span>
+            <a class="social__link" href="#"><span class="visually-hidden">Вконтакте.</span>
+              <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#vk"></use>
+              </svg>
             </a>
           </li>
-
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб.</span>
+            <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span>
+              <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
             </a>
           </li>
-
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Телеграмм.</span>
+            <a class="social__link" href="#"><span class="visually-hidden">Вконтакте.</span>
+              <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#telegram"></use>
+              </svg>
             </a>
           </li>
-
         </ul>
       </section>
 
