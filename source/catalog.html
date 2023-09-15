@@ -8,8 +8,8 @@
   <link rel="apple-touch-icon" href="img/favicons/icon-180х180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/icon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/icon-16x16.png">
-  <link rel="manifest" href="img/favicons/manifest.webmanifest">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Кэт энерджи</title>
 </head>
 
@@ -25,7 +25,7 @@
             <img class="logo__image" src="img/header/logo-mobile.svg" width="33" height="38" alt="Логотип сайта-кот">
           </picture>
           <svg class="logo__text" width="101" height="18" role="img" aria-label="Текстовый логотип сайта">
-            <use href="img/sprite-logo.svg#logo__text" aria-hidden="true"></use>
+            <use href="img/sprite.svg#logo__text" aria-hidden="true"></use>
           </svg>
         </a>
       </div>
@@ -60,6 +60,12 @@
                 <div class="product-card__image-wrapper">
                   <a class="product-card__link" href="#">
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/catalog/chiken-500-tablet.webp 1x, img/catalog/chiken-500-tablet@2x.webp 2x"
+                        width="200" height="210">
+                      <source type="image/webp"
+                        srcset="img/catalog/chiken-500-mobile.webp 1x, img/catalog/chiken-500-mobile@2x.webp 2x"
+                        width="140" height="107">
                       <source media="(min-width: 768px)"
                         srcset="img/catalog/chiken-500-tablet.png, img/catalog/chiken-500-tablet@2x.png 2x" width="200"
                         height="210">
@@ -99,6 +105,12 @@
                 <div class="product-card__image-wrapper">
                   <a class="product-card__link" href="#">
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/catalog/chiken-1000-tablet.webp 1x, img/catalog/chiken-1000-tablet@2x.webp 2x"
+                        width="200" height="210">
+                      <source type="image/webp"
+                        srcset="img/catalog/chiken-1000-mobile.webp 1x, img/catalog/chiken-1000-mobile@2x.webp 2x"
+                        width="140" height="107">
                       <source media="(min-width: 768px)"
                         srcset="img/catalog/chiken-1000-tablet.png, img/catalog/chiken-1000-tablet@2x.png 2x"
                         width="200" height="210">
@@ -139,6 +151,12 @@
                 <div class="product-card__image-wrapper">
                   <a class="product-card__link" href="#">
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/catalog/fish-500-tablet.webp 1x, img/catalog/fish-500-tablet@2x.webp 2x" width="200"
+                        height="210">
+                      <source type="image/webp"
+                        srcset="img/catalog/fish-500-mobile.webp 1x, img/catalog/fish-500-mobile@2x.webp 2x" width="140"
+                        height="107">
                       <source media="(min-width: 768px)"
                         srcset="img/catalog/fish-500-tablet.png, img/catalog/fish-500-tablet@2x.png 2x" width="200"
                         height="210">
@@ -178,6 +196,12 @@
                 <div class="product-card__image-wrapper">
                   <a class="product-card__link" href="#">
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/catalog/fish-1000-tablet.webp 1x, img/catalog/fish-1000-tablet@2x.webp 2x"
+                        width="200" height="210">
+                      <source type="image/webp"
+                        srcset="img/catalog/fish-1000-mobile.webp 1x, img/catalog/fish-1000-mobile@2x.webp 2x"
+                        width="140" height="107">
                       <source media="(min-width: 768px)"
                         srcset="img/catalog/fish-1000-tablet.png, img/catalog/fish-1000-tablet@2x.png 2x" width="200"
                         height="210">
@@ -217,6 +241,12 @@
                 <div class="product-card__image-wrapper">
                   <a class="product-card__link" href="#">
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/catalog/buckwheat-500-tablet.webp 1x, img/catalog/buckwheat-500-tablet@2x.webp 2x"
+                        width="200" height="210">
+                      <source type="image/webp"
+                        srcset="img/catalog/buckwheat-500-mobile.webp 1x, img/catalog/buckwheat-500-mobile@2x.webp 2x"
+                        width="140" height="107">
                       <source media="(min-width: 768px)"
                         srcset="img/catalog/buckwheat-500-tablet.png, img/catalog/buckwheat-500-tablet@2x.png 2x"
                         width="200" height="210">
@@ -256,6 +286,12 @@
                 <div class="product-card__image-wrapper">
                   <a class="product-card__link" href="#">
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/catalog/buckwheat-1000-tablet.webp 1x, img/catalog/buckwheat-1000-tablet@2x.webp 2x"
+                        width="200" height="210">
+                      <source type="image/webp"
+                        srcset="img/catalog/buckwheat-1000-mobile.webp 1x, img/catalog/buckwheat-1000-mobile@2x.webp 2x"
+                        width="140" height="107">
                       <source media="(min-width: 768px)"
                         srcset="img/catalog/buckwheat-1000-tablet.png, img/catalog/buckwheat-1000-tablet@2x.png 2x"
                         width="200" height="210">
@@ -295,6 +331,12 @@
                 <div class="product-card__image-wrapper">
                   <a class="product-card__link" href="#">
                     <picture>
+                      <source type="image/webp" media="(min-width: 768px)"
+                        srcset="img/catalog/rice-500-tablet.webp 1x, img/catalog/rice-500-tablet@2x.webp 2x" width="200"
+                        height="210">
+                      <source type="image/webp"
+                        srcset="img/catalog/rice-500-mobile.webp 1x, img/catalog/rice-500-mobile@2x.webp 2x" width="140"
+                        height="107">
                       <source media="(min-width: 768px)"
                         srcset="img/catalog/rice-500-tablet.png, img/catalog/rice-500-tablet@2x.png 2x" width="200"
                         height="210">
@@ -423,7 +465,7 @@
 
       <a class="main-footer__logo" href="catalog.html">
         <svg class="main-footer__logo-text" width="128" height="24" role="img" aria-label="Текстовый логотип сайта.">
-          <use href="img/sprite-logo.svg#main-footer__logo"></use>
+          <use href="img/sprite.svg#main-footer__logo"></use>
         </svg>
       </a>
 
@@ -432,20 +474,26 @@
 
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="#"><span class="visually-hidden">Вконтакте.</span>
+            <a class="social__link" href="#"><span class="visually-hidden">Вконтакте.</span>
+              <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#vk"></use>
+              </svg>
             </a>
           </li>
-
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Ютуб.</span>
+            <a class="social__link" href="#"><span class="visually-hidden">Ютуб</span>
+              <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#youtube"></use>
+              </svg>
             </a>
           </li>
-
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="#"><span class="visually-hidden">Телеграмм.</span>
+            <a class="social__link" href="#"><span class="visually-hidden">Вконтакте.</span>
+              <svg class="social__icon" width="28" height="22" aria-hidden="true" focusable="false">
+                <use href="img/sprite.svg#telegram"></use>
+              </svg>
             </a>
           </li>
-
         </ul>
       </section>
 
@@ -453,12 +501,13 @@
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="developer__text">HTML Academy</p>
           <svg class="developer__image" width="27" height="34" role="img" aria-labelledby="Cайт HTML Academy">
-            <use href=" img/sprite-logo.svg#developer__image">aria-hidden="true"></use>
+            <use href=" img/sprite.svg#developer__image">aria-hidden="true"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
+
   <script src="js/script.js"></script>
 </body>
 
