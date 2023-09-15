@@ -4,13 +4,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="HTML Academy: Кэт энерджи">
+  <meta name="description" content="Учебный проект Кэт энерджи,">
+  <title>Каталог товаров: Кэт энерджи</title>
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" href="img/favicons/icon-180х180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/icon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/icon-16x16.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Кэт энерджи</title>
 </head>
 
 <body class="page__body">
@@ -250,8 +254,8 @@
                       <source media="(min-width: 768px)"
                         srcset="img/catalog/buckwheat-500-tablet.png, img/catalog/buckwheat-500-tablet@2x.png 2x"
                         width="200" height="210">
-                      <img class="product-card__image" src="img/catalog/buckwheat-500-mobile.png" width="140"
-                        height="107" srcset="img/catalog/buckwheat-500-mobile@2x.png 2x"
+                      <img class="product-card__image" loading="lazy" src="img/catalog/buckwheat-500-mobile.png"
+                        width="140" height="107" srcset="img/catalog/buckwheat-500-mobile@2x.png 2x"
                         alt="Упаковка корма Cat Energy PRO 500 г со вкусом гречки">
                     </picture>
                   </a>
@@ -295,8 +299,8 @@
                       <source media="(min-width: 768px)"
                         srcset="img/catalog/buckwheat-1000-tablet.png, img/catalog/buckwheat-1000-tablet@2x.png 2x"
                         width="200" height="210">
-                      <img class="product-card__image" src="img/catalog/buckwheat-1000-mobile.png" width="140"
-                        height="107" srcset="img/catalog/buckwheat-1000-mobile@2x.png 2x"
+                      <img class="product-card__image" loading="lazy" src="img/catalog/buckwheat-1000-mobile.png"
+                        width="140" height="107" srcset="img/catalog/buckwheat-1000-mobile@2x.png 2x"
                         alt="Упаковка корма Cat Energy PRO 1000 г со вкусом гречки">
                     </picture>
                   </a>
@@ -340,8 +344,8 @@
                       <source media="(min-width: 768px)"
                         srcset="img/catalog/rice-500-tablet.png, img/catalog/rice-500-tablet@2x.png 2x" width="200"
                         height="210">
-                      <img class="product-card__image" src="img/catalog/rice-500-mobile.png" width="140" height="107"
-                        srcset="img/catalog/rice-500-mobile@2x.png 2x"
+                      <img class="product-card__image" loading="lazy" src="img/catalog/rice-500-mobile.png" width="140"
+                        height="107" srcset="img/catalog/rice-500-mobile@2x.png 2x"
                         alt="Упаковка корма Cat Energy PRO 500 г со вкусом риса">
                     </picture>
                   </a>
@@ -454,9 +458,23 @@
           </address>
         </div>
       </div>
-      <iframe class="map__link"
+      <iframe class="map__link" loading="lazy"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A995ecd5d815b28bd183afc558411fa61d58b43e2f72ebeb022cbd5c4cc2fd4f5&amp;source=constructor"
         width="100%" height="100%" frameborder="0"></iframe>
+        <noscript>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/map/location-desktop.webp, img/map/location-desktop.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/map/location-tablet.webp, img/map/location-tablet.webp 2x">
+            <source type="image/webp" srcset="img/map/location-mobile.webp, img/map/location-mobile.webp 2x">
+            <source media="(min-width: 1440px)"
+              srcset="img//map/location-desktop.png, img/map/location-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/map/location-tablet.png, img/map/location-tablet@2x.png 2x">
+            <img class="map__image" src="img/map/location-mobile.png" srcset="img/map/location-mobile@2x.png 2x"
+              width="320" height="362" alt="Карта">
+          </picture>
+        </noscript>
     </section>
   </main>
 

@@ -90,13 +90,6 @@
   margin: 0;
 }
 
-.form__label-wrapper.form__label-wrapper--error {
-  >.form__control + .form__icon {
-    border-color: $error;
-    color: $error;
-  }
-}
-
 .form__icon {
   fill: none;
   stroke: $text-basic-dark;
@@ -144,8 +137,15 @@
     border-color: $error;
   }
 
-  &:focus-within .form__icon {
-    stroke: $bg-button-basic;
+  &:focus + .form__icon {
+    color: $bg-button-basic;
+  }
+}
+
+.form__label-wrapper--error {
+  .form__control + .form__icon {
+    border-color: $error;
+    color: $error;
   }
 }
 
