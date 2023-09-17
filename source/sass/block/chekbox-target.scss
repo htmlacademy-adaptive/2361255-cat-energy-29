@@ -32,6 +32,7 @@
 
 .chekbox-target {
   border: none;
+  min-inline-size: auto;
 }
 
 .chekbox-target__control {
@@ -76,7 +77,7 @@
   &:disabled {
     opacity: 0.3;
   }
-}
+  }
 
 .chekbox-target__item {
   display: flex;
@@ -88,7 +89,7 @@
 }
 
 .chekbox-target__control-input[type="checkbox"] {
-  &:checked + .chekbox-target__control-label::before {
+  &:checked+.chekbox-target__control-label::before {
     display: block;
     width: 26px;
     height: 26px;

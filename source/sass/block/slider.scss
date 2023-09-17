@@ -1,7 +1,6 @@
 .slider {
   display: grid;
   grid-template-columns: 140px 1fr;
-
   position: relative;
   width: 280px;
   height: 256px;
@@ -58,6 +57,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: $icon-basic;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -82,11 +82,11 @@
   background-color: $icon-basic;
 }
 
-.slider__button-toggle:hover + .slider__button-line,
-.slider__button-toggle:focus + .slider__button-line {
+.slider__button-toggle:hover+.slider__button-line,
+.slider__button-toggle:focus+.slider__button-line {
   background-color: $bg-button-basic;
 }
 
-.slider__button-toggle:active + .slider__button-line {
+.slider__button-toggle:active+.slider__button-line {
   background-color: $bg-button-hover;
 }
