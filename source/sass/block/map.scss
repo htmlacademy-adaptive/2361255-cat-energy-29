@@ -7,7 +7,6 @@
   width: $mobile-width;
   margin: 0 auto;
 
-
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 163px);
     padding: 61px 70px;
@@ -16,11 +15,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
     grid-template-columns: repeat(2, 195px);
     gap: 55px;
     width: 565px;
-    position: absolute;
     background-color: $bg-basic-light;
     margin-left: 95px;
     position: relative;
@@ -28,7 +25,6 @@
     z-index: 1;
   }
 }
-
 
 .map__container {
   @media (min-width: $desktop-width) {
@@ -56,13 +52,12 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
   }
 }
-
 
 .map__title {
   color: $text-dark-medium;

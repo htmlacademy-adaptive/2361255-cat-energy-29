@@ -132,13 +132,13 @@
     outline: none;
   }
 
-  &:focus+.form__icon {
+  &:focus + .form__icon {
     color: $bg-button-basic;
   }
 }
 
 .form__label-wrapper--error {
-  .form__control+.form__icon {
+  .form__control + .form__icon {
     color: $error;
   }
 

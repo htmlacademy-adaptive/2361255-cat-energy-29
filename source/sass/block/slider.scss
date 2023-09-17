@@ -82,11 +82,11 @@
   background-color: $icon-basic;
 }
 
-.slider__button-toggle:hover+.slider__button-line,
-.slider__button-toggle:focus+.slider__button-line {
+.slider__button-toggle:hover + .slider__button-line,
+.slider__button-toggle:focus + .slider__button-line {
   background-color: $bg-button-basic;
 }
 
-.slider__button-toggle:active+.slider__button-line {
+.slider__button-toggle:active + .slider__button-line {
   background-color: $bg-button-hover;
 }
