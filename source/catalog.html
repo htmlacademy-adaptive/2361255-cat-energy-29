@@ -18,7 +18,6 @@
 </head>
 
 <body class="page__body">
-
   <header class="main-header">
     <div class="main-header__wrapper">
       <div class="main-header__logo-wrapper">
@@ -28,15 +27,16 @@
             <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg" width="60" height="50">
             <img class="logo__image" src="img/header/logo-mobile.svg" width="33" height="38" alt="Логотип сайта-кот">
           </picture>
-          <svg class="logo__text" width="101" height="18" role="img" aria-label="Текстовый логотип сайта">
-            <use href="img/sprite.svg#logo__text" aria-hidden="true"></use>
-          </svg>
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/header/logo-text-tablet.svg">
+            <img class="logo__text" src="img/header/logo-text-mobile.svg" width="101" height="20"
+              alt="Текстовый логотип сайта.">
+          </picture>
         </a>
       </div>
-      <nav class="main-heder__nav main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
             меню</span></button>
-
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item ">
@@ -100,7 +100,6 @@
                 </div>
               </div>
               <button class="product-card__button button button--primary" type="button">заказать</button>
-
             </article>
           </li>
           <li class="products__item">
@@ -144,8 +143,6 @@
                   </dl>
                 </div>
               </div>
-
-
               <button class="product-card__button button button--primary" type="button">заказать</button>
             </article>
           </li>
@@ -191,7 +188,6 @@
                 </div>
               </div>
               <button class="product-card__button button button--primary" type="button">заказать</button>
-
             </article>
           </li>
           <li class="products__item">
@@ -236,7 +232,6 @@
                 </div>
               </div>
               <button class="product-card__button button button--primary" type="button">заказать</button>
-
             </article>
           </li>
           <li class="products__item">
@@ -281,7 +276,6 @@
                 </div>
               </div>
               <button class="product-card__button button button--primary" type="button">заказать</button>
-
             </article>
           </li>
           <li class="products__item">
@@ -373,7 +367,6 @@
               <button class="product-card__button button button--primary" type="button">заказать</button>
             </article>
           </li>
-
           <li class="products__item">
             <article class="products__card product-card product-card--show-more">
               <div class="product-card__wrapper product-card__wrapper--show-more">
@@ -392,21 +385,19 @@
         </ul>
       </div>
     </section>
-
     <div class="additionally-products">
       <div class="additionally-products__wrapper-strip">
         <div class="additionally-products__title-wrapper">
           <h2 class="additionally-products__title">Дополнительные товары</h2>
         </div>
       </div>
-
       <section class="additionally-products__extra-wrapper">
         <ul class="additionally-products__list additionally-product">
           <li class="additionally-product__item">
             <h3 class="additionally-product__title">Сахарозаменитель</h3>
             <dl class="additionally-product__wrapper">
-              <dd class="additionally-product__quantity">1 упаковка (100 г)</dd>
-              <dt class="additionally-product__price">200 ₽</dt>
+              <dt class="additionally-product__quantity">1 упаковка (100 г)</dt>
+              <dd class="additionally-product__price">200 ₽</dd>
             </dl>
             <button class="additionally-product__button button button--primary" type="button">заказать</button>
           </li>
@@ -435,7 +426,6 @@
             <button class="additionally-product__button button button--primary" type="button">заказать</button>
           </li>
         </ul>
-
         <div class="gift">
           <div class="gift-container">
             <div class="gift__wrapper">
@@ -447,7 +437,6 @@
         </div>
       </section>
     </div>
-
     <section class="map">
       <div class="map__container map__container--invert">
         <div class="map__wrapper">
@@ -457,8 +446,8 @@
           </address>
         </div>
         <iframe class="map__link" loading="lazy" title="Расположение на карте."
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A995ecd5d815b28bd183afc558411fa61d58b43e2f72ebeb022cbd5c4cc2fd4f5&amp;source=constructor"
-          width="100%" height="100%" frameborder="0"></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7994.415024106482!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sge!4v1693117787448!5m2!1sru!2sge"
+          style="border: 0"></iframe>
         <noscript>
           <picture>
             <source type="image/webp" media="(min-width: 1440px)"
@@ -476,19 +465,15 @@
       </div>
     </section>
   </main>
-
   <footer class="main-footer">
     <div class="main-footer__container">
-
       <a class="main-footer__logo" href="catalog.html">
         <svg class="main-footer__logo-text" width="128" height="24" role="img" aria-label="Текстовый логотип сайта.">
           <use href="img/sprite.svg#main-footer__logo"></use>
         </svg>
       </a>
-
       <section class="main-footer__social social">
         <h3 class="social__title visually-hidden">Социальные сети</h3>
-
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link" href="#"><span class="visually-hidden">Вконтакте.</span>
@@ -513,18 +498,16 @@
           </li>
         </ul>
       </section>
-
       <div class="main-footer__developer developer">
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
           <p class="developer__text">HTML Academy</p>
-          <svg class="developer__image" width="27" height="34" role="img" aria-labelledby="Cайт HTML Academy">
-            <use href=" img/sprite.svg#developer__image">aria-hidden="true"></use>
+          <svg class="developer__image" width="27" height="34" role="img" aria-label="Cайт HTML Academy">
+            <use href=" img/sprite.svg#developer__image"></use>
           </svg>
         </a>
       </div>
     </div>
   </footer>
-
   <script src="js/script.js"></script>
 </body>
 

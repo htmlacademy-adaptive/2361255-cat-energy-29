@@ -32,7 +32,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    margin-top: 13px;
+    margin-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,7 +44,7 @@
 
 .additionally-product__item {
   border-bottom: 1px solid $border-grey-cd;
-  padding: 12px 0 20px 0;
+  padding: 13px 0 18px 0;
 
   &:first-child {
     border-top: 1px solid $border-grey-cd;
@@ -53,7 +53,7 @@
   @media (min-width: $tablet-width) {
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
-    padding: 12px 38px 28px 38px;
+    padding: 16px 38px 27px 38px;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -115,7 +115,8 @@
 .additionally-product__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-top: 13px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
