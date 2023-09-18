@@ -6,14 +6,12 @@
   line-height: 18px;
   text-transform: uppercase;
 
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
   }
 }
-
 
 .form__wrapper-strip::before {
   position: absolute;
@@ -72,7 +70,6 @@
 .form__contain--area {
   padding-bottom: 26px;
 
-
   @media (min-width: $tablet-width) {
     padding: 0 70px 65px 70px;
     gap: 0;
@@ -88,13 +85,6 @@
   gap: 13px;
   align-items: center;
   margin: 0;
-}
-
-.form__label-wrapper.form__label-wrapper--error {
-  >.form__control + .form__icon {
-    border-color: $error;
-    color: $error;
-  }
 }
 
 .form__icon {
@@ -140,12 +130,18 @@
     outline: none;
   }
 
-  &:invalid {
-    border-color: $error;
+  &:focus + .form__icon {
+    color: $bg-button-basic;
+  }
+}
+
+.form__label-wrapper--error {
+  .form__control + .form__icon {
+    color: $error;
   }
 
-  &:focus-within .form__icon {
-    stroke: $bg-button-basic;
+  .form__control {
+    border-color: $error;
   }
 }
 
@@ -192,11 +188,11 @@
   margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 68px;
+    margin-bottom: 88px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 62px;
+    margin-bottom: 82px;
   }
 }
 
@@ -248,6 +244,8 @@
   margin: 0 -20px;
   background-color: $bg-basic-light;
   max-width: 187px;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -269,6 +267,8 @@
 }
 
 .form__binding {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   color: $text-basic-dark;
   text-align: center;
@@ -284,6 +284,11 @@
     font-size: 16px;
     font-weight: 400;
     margin-top: -5px;
+    max-width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 570px;
   }
 }
 

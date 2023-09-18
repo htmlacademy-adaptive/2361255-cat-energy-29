@@ -19,13 +19,14 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    top: 50%;
-    left: 70%;
+    top: 47%;
+    left: 71%;
   }
 
   @media (min-width: 1440px) {
     width: 118px;
-    height: 21px;
+    height: 23px;
     top: 47%;
+    left: 71%;
   }
 }

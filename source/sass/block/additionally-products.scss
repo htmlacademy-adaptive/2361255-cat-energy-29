@@ -12,14 +12,14 @@
     justify-content: space-between;
     width: 1221px;
     margin: 0 auto;
-    margin-bottom: 87px;
+    margin-bottom: 88px;
   }
 }
 
 .additionally-products__wrapper-strip {
   position: relative;
   margin-top: 26px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -30,13 +30,12 @@
 .additionally-products__wrapper-strip::before {
   position: absolute;
   content: "";
-  top: 65%;
+  top: 62%;
   left: 0;
   right: 0;
   z-index: 1;
   height: 2px;
   background-color: $bg-branded;
-  width: 100%;
 }
 
 .additionally-products__title-wrapper {
@@ -50,7 +49,6 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 110px;
-    width: $desktop-width;
   }
 }
 
@@ -79,10 +77,13 @@
   box-sizing: border-box;
   position: relative;
   z-index: 2;
-  width: max-content;
   padding: 0 20px;
   margin: 0 -20px;
   background-color: $bg-basic-light;
+  width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: calc(($mobile-width) - 10px);
 
   @media (min-width: $tablet-width) {
     padding: 0 40px;
@@ -90,13 +91,11 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
+    max-width: calc($tablet-width - 40px);
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 -40px;
-    font-family: $font-oswald;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 36px;
+    max-width: calc($desktop-width - 70px);
   }
 }
