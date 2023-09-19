@@ -170,13 +170,16 @@
 .form__wrapper-title {
   margin: 0 auto;
   padding: 0 20px;
+  max-width: 280px;
 
   @media (min-width: $tablet-width) {
     padding: 0 70px;
+    max-width: 628px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px;
+    max-width: 1220px;
   }
 }
 
@@ -266,29 +269,12 @@
   padding: 0;
 }
 
-.form__binding {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  color: $text-basic-dark;
-  text-align: center;
-  font-family: $font-lato;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  padding: 21px 0 8px 0;
-  box-sizing: border-box;
-
-  @media (min-width: $tablet-width) {
-    text-align: start;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: -5px;
-    max-width: 284px;
-  }
-
+.form__wrapper-cat {
   @media (min-width: $desktop-width) {
-    max-width: 570px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 0 110px;
   }
 }
 
@@ -302,9 +288,10 @@
     width: 768px;
     grid-template-columns: 284px 1fr;
     justify-content: start;
-    padding: 0 70px 60px 70px;
-    gap: 60px;
+    padding: 10px 70px 60px 70px;
     margin-bottom: 0;
+    box-sizing: border-box;
+    gap: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -315,19 +302,40 @@
   }
 }
 
-.form__wrapper-cat {
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    padding: 0 110px;
-  }
-}
-
 .form__button {
+  margin: 0 auto;
+  width: 280px;
+
   @media (min-width: $tablet-width) {
     padding: 14px 20px;
     font-size: 20px;
     line-height: 26px;
+    width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form__binding {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  color: $text-basic-dark;
+  text-align: center;
+  font-family: $font-lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 21px 83px 33px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: -5px;
+    padding: 21px 0;
   }
 }
