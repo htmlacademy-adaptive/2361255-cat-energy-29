@@ -33,6 +33,7 @@
   border-bottom: 1px solid $border-grey;
   box-sizing: border-box;
   align-items: center;
+  flex-wrap: wrap;
 
   &:hover .main-footer__logo-text,
   &:focus-visible .main-footer__logo-text {
@@ -66,5 +67,11 @@
     padding: 0;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 253px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 520px;
   }
 }

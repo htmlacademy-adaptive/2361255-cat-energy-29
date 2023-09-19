@@ -22,10 +22,11 @@
   font-weight: 400;
   line-height: 20px;
   margin: 0;
+  max-width: 200px;
 }
 
 .developer__image {
-  fill: $logo-developer;
+  fill: $logo-text-active;
 
   &:hover,
   &:focus-visible {

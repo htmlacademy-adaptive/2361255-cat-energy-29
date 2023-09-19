@@ -38,8 +38,7 @@
   background-color: $bg-basic-light;
   position: absolute;
   top: 22px;
-  right: 21px;
-
+  right: 20px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -103,5 +102,11 @@
     display: block;
     position: static;
     min-height: 0;
+  }
+}
+
+.main-nav__wrapper {
+  @media (max-width: 767px) {
+    width: 320px;
   }
 }
